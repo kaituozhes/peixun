@@ -1,0 +1,117 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">美丽说后台店铺添加中心</h1>
+			<script src="__PUBLIC__/dist/js/jquery-1.11.3.min.js"></script>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-6" style="margin-left:250px">
+			<div class="panel panel-default" >
+				<div class="panel-heading">添加店铺</div>
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<form action="{:U('Store/insert')}" method="post" role="form"enctype='multipart/form-data'>
+
+					 	<div class="form-group has-success col-md-12">
+							<label class="control-label" for="inputSuccess">创始人</label>
+							<input type="text" name="name" class="form-control" id="inputSuccess">
+						</div>
+						<div class="form-group has-warning col-md-12">
+							<label class="control-label" for="inputWarning">店名</label>
+							<input type="text" name="trade" class="form-control" id="inputWarning">
+						</div>
+						<div class="form-group has-warning col-md-12">
+							<label class="control-label" for="inputWarning">logo</label>
+							<input type="file" name="logo" / class="pictu" style="background: snow">
+						</div>
+						<div class="form-group has-error col-md-12">
+							<label class="control-label" for="inputError">状态</label>
+							<select type="text" name="state" class="form-control" id="inputError">
+								<option value="1">开启</option>
+								<option value="2">关闭</option>
+							</select>
+						</div>
+
+						<div class="form-group has-success col-md-12">
+							<label class="control-label" for="inputSuccess">信用级别</label>
+							<select type="text" name="creait" class="form-control" id="inputSuccess">
+							<option value="1">一级</option>
+							</select>
+						</div>
+						<div id="box" class="form-group has-warning col-md-12">
+							<label class="control-label" for="inputWarning">地址</label>
+							<select name="" class="form-control"id="province">
+								<option value="">--请选择省--</option>
+							</select>
+							<select name="" class="form-control"id="city">
+								<option value="">--请选择市--</option>
+							</select>
+							<select name="" class="form-control"id="county">
+								<option value="">--请选择县--</option>
+							</select>
+							<select name="" class="form-control"id="xiang">
+								<option value="">--请选择乡--</option>
+							</select>
+
+						</div>
+						<input type="hidden" name="area" value="" id="dizhi">
+			<script>
+			$(function(){
+				function getCity(obj,value)
+			{
+				$.get('{:U('Index/area')}',{'upid':value},function(msg){
+					// 1.msg是对象，将对象遍历拼接成option格式的HTML标签
+					var arr = [];
+					var str = '<option>--请选择--</option>';
+					for (var i in msg) {
+						str += '<option value="'+msg[i]['id']+'">'+msg[i]['name']+'</option>';
+					}
+
+					// 2.将拼接好的HTML代码放在select内
+					var arr=[];
+					if (obj == 'province') {
+						$('#province').html(str);	
+					} else {
+						obj.next().html(str);
+					}
+				})
+			}
+			getCity('province',0);
+
+			// 省份改变事件，市改变
+			$('#province,#city,#county,#xiang').change(function(){
+				// 0.初始化
+				$(this).nextAll().html('<option>--请选择--</option>');
+				//在下面的ajax请求中，$(this)传递不进去，只能定义变量接收$(this),在下面的ajax中使用变量
+				var that = $(this);
+				// 1.获取值
+				var value = $(this).val();
+				var arr = [];
+				$('#box>select>option:selected').each(function(){
+					arr.push($(this).text());
+					$('#dizhi').attr('value',arr);
+				})
+
+				getCity(that,value);
+			})
+			})
+		    </script>
+
+						<div class="form-group has-error col-md-12">
+							<label class="control-label" for="inputError">介绍</label>
+							<input type="textarea" name="des" class="form-control" id="inputError">
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg  col-md-12">提交</button>
+					</form>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+</block>

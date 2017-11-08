@@ -1,0 +1,40 @@
+<extend name="tong/base"/>
+<block name="main">
+<foreach name="cate" item="ca">
+<div id="banner" style="background: #fff url({$ca['cateimg']}) top center no-repeat;position:relative;top:0;">
+	<div class="w1200">
+		<div class="name">{$ca['catename']}</div>
+	</div>
+</div>
+</foreach>
+  <div class="brandwarp container">
+  <div class="w1200">
+    <div class="path" style="display:none;">
+      <a href="">Home</a>&gt;
+      <a href="">关于基康</a>&gt;
+      <a href="">公司简介</a></div>
+    <div class="cont-box">
+			<include file="about/left" />
+       <div id="conts">
+            <h1 class="title">N E W S</h1>
+            <ul class="brand-list">
+							<foreach name="three" item="san">
+              <li class=""><img src="__PUBLIC__/{$san['litpic']}" style="width:100%;" />
+                <p class="p0">{$san['title']}</p>
+                <p>{$san['description']}</p>
+                <a href="{:U('about/detail',array('id'=>$san['tid'],'cate_id'=>$cate_id,'son_id'=>$son_id))}">详细&gt;</a></li>
+							</foreach>
+            </ul>
+            <ul class="brand-info" id="infoList">
+							<foreach name="all" item="quan">
+              <li><a href="{:U('about/detail',array('id'=>$quan['tid'],'cate_id'=>$cate_id,'son_id'=>$son_id))}">{$quan['title']}</a><span>{$quan['addtime']|date="Y-m-d",###}</span><i class="bg"></i></li>
+						</foreach>
+            </ul>
+            <p class="more">
+              <input type="hidden" id="hidPageCount" value="6" />
+              <a onclick="getMore();">加载更多&gt;</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</block>

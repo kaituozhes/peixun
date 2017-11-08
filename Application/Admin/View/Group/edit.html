@@ -1,0 +1,71 @@
+<extend name="public/base" />
+<block name="main">
+<div class="tpl-content-wrapper">
+<div class="tpl-content-page-title">
+    权限管理
+</div>
+<ol class="am-breadcrumb">
+    <li><a href="#" class="am-icon-home">首页</a></li>
+    <li><a href="#">权限管理</a></li>
+    <li class="am-active">权限添加</li>
+</ol>
+<div class="tpl-portlet-components">
+    <div class="portlet-title">
+        <div class="caption font-green bold">
+            <span class="am-icon-code"></span> 添加
+        </div>
+        <div class="tpl-portlet-input tpl-fz-ml">
+            <div class="portlet-input input-small input-inline">
+                <div class="input-icon right">
+                    <i class="am-icon-search"></i>
+                    <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+            </div>
+        </div>
+    </div>
+    <div class="tpl-block ">
+
+        <div class="am-g tpl-amazeui-form">
+            <div class="am-u-sm-12 am-u-md-9">
+                <form class="am-form am-form-horizontal" method="post" action="" enctype="multipart/form-data">
+                    <input type="hidden" name="group_id" value="{$group_data['group_id']}">
+                    <div class="am-form-group">
+                        <label for="user-name" class="am-u-sm-3 am-form-label">用户组</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" name="group_name" value="{$group_data['group_name']}" placeholder="用户组">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-name" class="am-u-sm-3 am-form-label">权限列表</label>
+                        <div class="am-u-sm-9">
+                        	<volist name="data" id="auth">
+                            <label class="am-checkbox-inline">
+						        <input type="checkbox" name="aid[]" value="{$auth['id']}" 
+                                    <if condition="$group_data['is_array'] eq 1">
+                                        <volist name="group_data['group_list']" id="th">
+                                            <if condition="$auth['id'] eq $th">
+                                                checked
+                                            </if>
+                                        </volist>
+                                    <else/>
+                                        <if condition="$auth['id'] eq $group_data['group_list']">
+                                            checked
+                                        </if>
+                                    </if>> {$auth['authcate_name']}
+						    </label>
+						    </volist>
+                        </div>
+                    </div>
+    
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <button type="submit" id="btn" class="am-btn am-btn-primary">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</block>

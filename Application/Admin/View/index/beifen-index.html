@@ -1,0 +1,91 @@
+<extend name="public/base"/>
+<block name="main">
+    <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                培训查询系统
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">分类</a></li>
+                <li class="am-active">内容</li>
+            </ol>
+<!--             <div class="tpl-content-scope">
+    <div class="note note-info">
+        <h3>Amaze UI 为移动而生
+            <span class="close" data-close="note"></span>
+        </h3>
+        <p> Amaze UI 含近 20 个 CSS 组件、20 余 JS 组件，更有多个包含不同主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。</p>
+        <p><span class="label label-danger">提示:</span> Amaze UI 关注中文排版，根据用户代理调整字体，实现更好的中文排版效果。
+        </p>
+    </div>
+</div> -->
+
+            <div class="row">
+                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
+                    <div class="dashboard-stat blue">
+                        <div class="visual">
+                            <i class="am-icon-comments-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> {$agencycount}</div>
+                            <div class="desc">  在线机构统计</div>
+                        </div>
+                        
+                    <i class="m-icon-swapright m-icon-white"></i>
+             
+                    </div>
+                </div>
+                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
+                    <div class="dashboard-stat red">
+                        <div class="visual">
+                            <i class="am-icon-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number"> {$lecturercount}</div>
+                            <div class="desc"> 讲师统计</div>
+                        </div>
+                        
+                    <i class="m-icon-swapright m-icon-white"></i>
+                
+                    </div>
+                </div>
+<div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
+    <div class="dashboard-stat green">
+        <div class="visual">
+            <i class="am-icon-apple"></i>
+        </div>
+        <div class="details">
+            <div class="number"> {$studentcount} </div>
+            <div class="desc">  学生信息统计 </div>
+        </div>
+        
+    <i class="m-icon-swapright m-icon-white"></i>
+
+    </div>
+</div>
+<div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
+    <div class="dashboard-stat purple">
+        <div class="visual">
+            <i class="am-icon-android"></i>
+        </div>
+        <div class="details">
+            <div class="number"> {$certificount} </div>
+            <div class="desc"> 学生证书 </div>
+        </div>
+
+    <i class="m-icon-swapright m-icon-white"></i>
+
+    </div>
+</div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+</block>

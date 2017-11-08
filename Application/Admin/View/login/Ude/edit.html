@@ -1,0 +1,144 @@
+<extend name="public/base" />
+<block name="main">
+
+ <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">用户修改管理</h1>
+                </div>
+  <script src="__PUBLIC__/dist/js/jquery-1.11.3.min.js"></script>              
+                <!-- /.col-lg-12 -->
+</div>
+     
+ 	<form action="{:U('Ude/update')}" method="post">
+	<input type="hidden" name="uid" value="{$data['uid']}" >
+ 	 <div class="col-lg-6">
+     <div class="form-group">
+			<label>昵称</label>
+			<input type="text" name="name" class="form-control" value="{$data['name']}">			
+	</div>
+
+	</div>
+ <div class="col-lg-6">
+			<div class="form-group">
+			<label>真实姓名</label>
+			<input type="text"  name="nickname" class="form-control" value="{$data['nickname']}">			
+</div>
+</div>
+<div class="col-lg-6">
+			<div class="form-group">
+			<label>生日</label>
+			<input type="text"  name="birthday" class="form-control" value="{$data['birthday']}">			
+</div>
+</div>
+<div class="col-lg-6" style="margin-top:30px;">
+<div class="form-group" >
+       <label>性别</label>
+         <label class="radio-inline">
+          <input type="radio" name="sex"  value="1" <if condition="$data['sex'] eq 1">checked</if> name="gender" >男
+          </label>
+           <label class="radio-inline">
+           <input type="radio" name="sex"  value="2" <if condition="$data['sex'] eq 2">checked</if> name="gender" >女
+           </label>
+           <label class="radio-inline">
+           </label>
+      </div>
+  </div>
+
+<div id="box" class="form-group has-warning col-md-6">
+							<label class="control-label" for="inputWarning">地址</label>
+							<select name="" class="form-control"id="province">
+								<option value="">--请选择省--</option>
+							</select>
+							<select name="" class="form-control"id="city">
+								<option value="">--请选择市--</option>
+							</select>
+						</div>
+<input type="hidden" name="address" value="" id="dizhi">
+		 <div class="col-lg-6">
+			<div class="form-group" style="margin-top:-100px;">
+			<label>学校</label>
+			<input type="text" name="school" class="form-control" value="{$data['school']}">	
+</div>
+</div>
+		 <div class="col-lg-6">
+			<div class="form-group" style="">
+			<label>工作单位</label>
+			<input type="text" name="unit" class="form-control" value="{$data['unit']}">			
+</div>
+</div>
+<div class="col-lg-6" style="margin-top:-80px;">
+               <div class="form-group">
+                           <label>从事行业</label>
+                           <select class="form-control" name="work">
+                            <option value="0">请选择</option>
+						<option value="0" <if condition="$data['work'] eq 0">selected</if>>白领</option>
+                        <option value="1" <if condition="$data['work'] eq 1">selected</if>>学生</option>
+                        <option value="2" <if condition="$data['work'] eq 2">selected</if>>程序猿</option>
+                        <option value="3" <if condition="$data['work'] eq 3">selected</if>>模特</option>
+                        <option value="4" <if condition="$data['work'] eq 4">selected</if>>时尚店主</option>
+                        <option value="5" <if condition="$data['work'] eq 5">selected</if>>传媒</option>
+                        <option value="6" <if condition="$data['work'] eq 6">selected</if>>艺术</option>
+                        <option value="7" <if condition="$data['work'] eq 7">selected</if>>其他</option>
+                       </select>
+                </div>		
+</div>
+<div class="col-lg-6">
+			<div class="form-group" style="">
+			<label>爱好</label>
+			<input type="text" name="like" class="form-control" value="{$data['like']}">			
+</div>
+</div>
+<div class="col-lg-6">
+			<div class="form-group" style="">
+			<label>美丽宣言</label>
+			<input type="text" name="introduce" class="form-control" value="{$data['introduce']}">			
+</div>
+</div>
+
+<button type="submit" class="btn btn-primary btn-lg btn-block col-lg-6">修改</button>	 		
+
+
+</form>
+<script>
+			$(function(){
+				function getCity(obj,value)
+			{
+				$.get('{:U('Index/area')}',{'upid':value},function(msg){
+					// 1.msg是对象，将对象遍历拼接成option格式的HTML标签
+					var arr = [];
+					var str = '<option>--请选择--</option>';
+					for (var i in msg) {
+						str += '<option value="'+msg[i]['id']+'">'+msg[i]['name']+'</option>';
+					}
+
+					// 2.将拼接好的HTML代码放在select内
+					var arr=[];
+					if (obj == 'province') {
+						$('#province').html(str);	
+					} else {
+						obj.next().html(str);
+					}
+				})
+			}
+			getCity('province',0);
+
+			// 省份改变事件，市改变
+			$('#province,#city,#county,#xiang').change(function(){
+				// 0.初始化
+				$(this).nextAll().html('<option>--请选择--</option>');
+				//在下面的ajax请求中，$(this)传递不进去，只能定义变量接收$(this),在下面的ajax中使用变量
+				var that = $(this);
+				// 1.获取值
+				var value = $(this).val();
+				var arr = [];
+				$('#box>select>option:selected').each(function(){
+					arr.push($(this).text());
+					$('#dizhi').attr('value',arr);
+				})
+
+				getCity(that,value);
+			})
+			})
+		    </script>
+		
+</block>

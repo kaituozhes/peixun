@@ -1,0 +1,132 @@
+<extend name="public/base" />
+<block name="main">
+<style type="text/css">
+    #fen{display: none;}
+</style>
+<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                成绩修改
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+
+                <li class="am-active">学生成绩修改</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 添加
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <!-- <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" enctype="multipart/form-data" method="post" action="{:U('member/achievement_edit')}">
+
+                                <input type="hidden" name="table" value="achievement">
+                                <input type="hidden" name="jump" value="achievement">
+                                <input type="hidden" name="achievement_id" value="{$data.achievement_id}">
+                                <input type="hidden" name="studentid" value="{$studentid}">
+                                <input type="hidden" name="subjectid" value="{$subjectid}">
+
+
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">ID <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="numeric" class="tpl-form-input" id="user-name" placeholder="添加后根据用户ID生成" disabled="disabled" value="{$data.student_id}">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">课程编号 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="ids" class="tpl-form-input" id="user-name"  placeholder="添加后根据课程生成" disabled="disabled" value="{$data.subject_id}">
+                                    </div>
+                                </div>
+
+
+<!--
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" name="fraction" class="tpl-form-input" id="user-name" placeholder="分数" value="{$data.fraction}">
+                                </div>
+                            </div> -->
+
+                                <!-- 初级状态 -->
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label" style="color:red;">阶段 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="stage" id="">
+
+                                           <option value="0" <if condition="$data[stage] EQ 0 ">selected</if>>请选择</option>
+                                            <option value="1" <if condition="$data[stage] EQ 1 ">selected</if>>课程学习</option>
+                                            <option value="2" <if condition="$data[stage] EQ 2 ">selected</if>>考试准备</option>
+                                            <option value="3" <if condition="$data[stage] EQ 3 ">selected</if>>考试完成</option>
+
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group" <if condition="$data[stage] EQ 3 "> style="display:block;" </if> id="fen">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="fen" class="tpl-form-input" id="user-name" placeholder="分数" value="{$data.fen}">
+                                    </div>
+                                </div>
+
+
+                                <!-- 级别选择jq处理数据 -->
+                                <script type="text/javascript">
+                                /*初级*/
+                                    $(function(){
+                                        $('select[name=stage]').change(function(){
+                                            var t = $(this).val();
+                                            if(t == 3){
+                                                $('#fen').show();
+                                            }else{
+                                                $('#fen').hide();
+                                            }
+                                        })
+                                    })
+
+                                </script>
+
+
+                                <!-- <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">所在机构 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="agency" id="">
+                                            <option value="{$data['agency_id']}">{$data['agencyrealname']}</option>
+
+                                        </select>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">修改</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+</div>
+</block>

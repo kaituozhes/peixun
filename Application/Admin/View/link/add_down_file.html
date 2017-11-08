@@ -1,0 +1,30 @@
+<extend name="public/base" />
+<block name="main">
+	
+    <div style="height:1400px;">
+		<h2 class="col-md-9" style="text-align:center;padding:10px 0;letter-spacing:3px;">下载文件添加</h2>
+		<div class="col-md-8">
+		<form action="{:U('link/down_insert')}" method="post" role="form" enctype="multipart/form-data">
+			<div class="form-group has-success col-md-7" style="margin-left:200px">
+				<!-- 要添加的栏目的父ID -->
+				<label class="control-label" for="inputSuccess">所属栏目</label>
+				<select name="cate_id" id="" class="form-control">
+					<option value="">请选择</option>
+					<volist name="lanmu" id="all">
+				  		<option value="{$all['id']}">{$all['catename']}</option>
+						<volist name="all['son']" id="son">
+						 <option value="{$son['id']}">-----{$son['catename']}</option>
+						</volist>
+					</volist>
+				</select>
+				<label class="control-label" for="texten">文件名称</label>
+				<input type="text" name="down_name" class="form-control" id="texten">
+				<label class="control-label" for="image">所需文件</label>
+				<input type="file" name="catefile" class="form-control" id="image">
+			</div>
+		    <button type="submit" class="btn btn-primary btn-lg  col-md-7" style="margin-left:200px">添加</button>
+		</form>
+		</div>
+	</div>
+	
+</block>

@@ -1,0 +1,10 @@
+[ 2017-04-13T23:39:04+08:00 ] ::1 /haohai/index.php/Home/Index/area.html?upid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: DESCRIBE hao_area [ RunTime:0.009991s ]
+SQL: SELECT * FROM `hao_area` WHERE `upid` = 0  [ RunTime:0.000530s ]
+

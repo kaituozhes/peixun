@@ -1,0 +1,92 @@
+<extend name="public/base" />
+<block name="main">
+<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                赞助商添加
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">赞助商管理</a></li>
+                <li class="am-active">赞助商添加</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 添加
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" enctype="multipart/form-data" method="post" action="">
+                                <input type="hidden" name="srid" value="{$data['srid']}">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">赞助商分类 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                            <select data-am-selected="{btnSize: 'sm'}" name="srcate">
+                                              <option value="option1">所有活动</option>
+                                              <option value="chief" <if condition="$data['srcate'] eq 'chief'">selected</if> >首席赞助商</option>
+                                              <option value="union" <if condition="$data['srcate'] eq 'union'">selected</if>>联合赞助商</option>
+                                              <option value="officer" <if condition="$data['srcate'] eq 'chief'">officer</if>>官方赞助商</option>
+                                              <!-- <volist name="gda" id="gd"> -->
+                                                <option value="{$gd['gid']}" <if condition="$data['srcate'] eq $gd['gid']">selected</if>>{$gd['itemtime']}{$gd['gaddress']}</option>
+                                              <!-- </volist> -->
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">赞助商名称 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="srname" class="tpl-form-input" id="user-name" placeholder="赞助商名称" value="{$data['srname']}">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">赞助商链接 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="srlink" class="tpl-form-input" id="user-name" placeholder="赞助商链接" value="{$data['srlink']}">
+                                        <small>赞助商链接必须以http://或者https://开头</small>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">赞助商图片 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <div class="am-form-group am-form-file">
+                                            <div class="tpl-form-file-img">
+                                                <img src="__PUBLIC__/{$data['srimg']}" alt="">
+                                            </div>
+                                            <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                            <i class="am-icon-cloud-upload"></i> 添加赞助商图片</button>
+                                            <input id="doc-form-file" name="srimg" type="file" multiple>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</block>

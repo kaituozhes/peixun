@@ -1,0 +1,78 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+               网站轮播管理
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">网站轮播</a></li>
+                <li class="am-active">轮播添加</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span>添加
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" method="post" action="{:U('gear/insert')}" enctype="multipart/form-data">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">跳转链接 <span class="tpl-form-line-small-title">link</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="jump_link" class="tpl-form-input" id="user-name" placeholder="请输入跳转链接" value="">
+                                        <small>跳转链接必须以http://或者https://开头</small>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label class="am-u-sm-3 am-form-label">轮播排序 <span class="tpl-form-line-small-title">sort</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="sort" placeholder="轮播排序" value="">
+                                        <small>轮播排序默认从小到大</small>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">轮播图 <span class="tpl-form-line-small-title">Images</span></label>
+                                    <div class="am-u-sm-9">
+                                        <div class="am-form-group am-form-file">
+                                            <div class="tpl-form-file-img">
+                                                <!-- <img src="__PUBLIC__/{$data['image']}" alt=""> -->
+                                            </div>
+                                            <button type="button" class="am-btn am-btn-danger am-btn-sm">
+    										<i class="am-icon-cloud-upload"></i> 添加轮播图</button>
+                                            <input id="doc-form-file" name="image" type="file" multiple>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</block>

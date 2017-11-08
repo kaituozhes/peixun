@@ -1,0 +1,71 @@
+<extend name="public/base" />
+<block name="main">
+<div class="clear"></div>
+<div class="slides">
+  <!-- header END -->
+  <div class="slide slide-2325" id="id_ec2647d10d904a86a9a153a6b3be60fe" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="border-top-style:solid; -webkit-animation-iteration-count:1; border-bottom-width:0px; -webkit-animation-duration:1s; padding-bottom:0px; padding-top:20px; border-top-width:0px; border-left-color:#DDD; background-size:cover; background-repeat:no-repeat; border-right-style:solid; padding-right:0px; border-left-style:solid; border-top-color:#DDD; background-position:50% 50%; border-bottom-color:#DDD; border-right-color:#DDD; animation-delay:0; z-index:0; animation-iteration-count:1; animation-duration:1s; border-bottom-style:solid; -webkit-animation-delay:0; border-right-width:0px; border-left-width:0px; padding-left:0px; ">
+      <div class="s-container" style="max-width:1100px; margin-right:auto; margin-left:auto; ">
+        <div no-link="true">
+          <div class="mianbiaoxie d-legacy">
+            <div class="b-macros-breadcrumb b-breadcrumb">
+              <ol class="breadcrumb">
+                <li>
+                  <a class="u-cursor" href="/">首页</a></li>
+                  <volist name="abc" id="vo">
+                      <li><a class="u-cursor" href="{:U('listarticle/index',array('id'=>$vo[id]))}">{$vo.catename}</a></li>
+                  </volist>
+              </ol>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide slide-2421" id="id_671b6a4c136c477f9d5b5dfff3cfb29a" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="border-top-style:solid; background-position:50% 50%; border-left-color:#DDD; border-bottom-style:solid; background-size:cover; background-repeat:no-repeat; border-bottom-width:0px; border-right-color:#DDD; border-right-width:0px; border-right-style:solid; z-index:0; border-left-style:solid; padding-bottom:20px; border-top-color:rgb(221, 221, 221); border-top-width:0px; padding-top:20px; border-left-width:0px; border-bottom-color:rgb(221, 221, 221); ">
+      <div class="s-container" style="background-size:cover; border-top-width:0px; border-left-color:#DDD; background-repeat:no-repeat; border-top-style:solid; border-left-width:0px; border-bottom-width:0px; border-right-color:#DDD; margin-right:auto; border-right-style:solid; border-right-width:0px; margin-left:auto; border-left-style:solid; border-bottom-style:solid; max-width:1100px; border-top-color:#DDD; background-position:50% 50%; border-bottom-color:#DDD; ">
+        <div no-link="true">
+          <link href="//cdn.bootcss.com/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet">
+          <script src="//cdn.bootcss.com/lightbox2/2.8.2/js/lightbox.min.js"></script>
+          <div class="a-container">
+            <div class="a-left b-group-border2">
+              <div class="a-top u-mg-b-10">
+                <h4 class="a-head b-group-border3">
+                  <div class="s-components-text s-text1 " style="text-align:inherit; ">
+                    <span style="font-size:18px; font-family:microsoft yahei; color:rgb(16, 70, 128); line-height:2.0; padding-top:0px; font-weight:bold; display:block; padding-left:0px; " id="id_fa7f9c0b7db4df6659428728">
+
+                    <a href="{:U('listarticle/index',array('id'=>$res[id]))}">{$res.catename}</a>
+
+                    </span></div>
+                </h4>
+                <div class="">
+                  <ul class="nav nav-pills" role="tablist">
+                  <volist name="catef" id='vo'>
+                    <li role="presentation" class="u-cursor active b-group-border1">
+                      <a href="__APP__/Home/{$vo['controller']}/{$vo['function']}/id/{$vo.id}" class="b-group-text1">{$vo.catename}</a></li>
+                  </volist>
+
+
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="a-right">
+              <div class="b-group-border2">
+                <h4 class="a-head b-group-text2 b-group-border3">{$categroy.catename}</h4>
+                <php>echo htmlspecialchars_decode(htmlspecialchars_decode($categroy[content]));</php>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer START --></div>
+<div class="footclear"></div>
+</block>

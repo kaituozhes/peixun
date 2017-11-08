@@ -1,0 +1,50 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">产品搜索条件管理中心</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">搜索条件管理</div>
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>条件名称</th>
+		 							<th>所属栏目</th>
+		 							<th>是否可用</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<foreach name="data" item="vo">
+								<tbody>
+									<tr>
+										<td>{$vo['eid']}</td>
+										<td>{$vo['exist_name']}</td>
+										<td>{$vo['catename']}</td>
+										<td><if condition="$vo['is_use'] eq 1">是<elseif condition="$vo['is_use'] eq 0"/>否</if></td>
+										<td>
+											<a href="{:U('goods/exist_edit',array('id'=>$vo['eid']))}" class="btn btn-warning btn-xs">修改</a>
+											<a href="{:U('goods/exist_del',array('id'=>$vo['eid']))}" class="btn btn-danger btn-xs">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</foreach>
+						</table>
+					</div>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+</block>

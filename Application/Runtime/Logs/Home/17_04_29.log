@@ -1,0 +1,248 @@
+[ 2017-04-29T22:42:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021629s ]
+SQL: DESCRIBE hao_gear [ RunTime:0.091551s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000371s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.054431s ]
+SQL: SELECT * FROM `hao_goods` LIMIT 0,6   [ RunTime:0.008475s ]
+SQL: DESCRIBE hao_article [ RunTime:0.053648s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 20 ORDER BY addtime desc LIMIT 1   [ RunTime:0.155857s ]
+SQL: DESCRIBE hao_category [ RunTime:0.191546s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000357s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.118110s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.310569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.310632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.109283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.109329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042158s ]
+
+[ 2017-04-29T22:42:42+08:00 ] 127.0.0.1 /index.php/Home/Index/area.html?upid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+SQL: DESCRIBE hao_area [ RunTime:0.114407s ]
+SQL: SELECT * FROM `hao_area` WHERE `upid` = '0'  [ RunTime:0.000780s ]
+
+[ 2017-04-29T22:52:24+08:00 ] 127.0.0.1 /index.php/Home/contact/index/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\daka\Application\Home\Controller\ContactController.class.php 第 20 行.
+SQL: DESCRIBE hao_category [ RunTime:0.010121s ]
+SQL: select * from hao_category where pid = 7 order by id asc [ RunTime:0.000398s ]
+SQL: select * from hao_category where id = 7 [ RunTime:0.000280s ]
+SQL: select * from hao_category where pid = 7 order by id asc [ RunTime:0.000466s ]
+SQL: DESCRIBE hao_article [ RunTime:0.010267s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '38' LIMIT 1   [ RunTime:0.025771s ]
+SQL: select * from hao_category where pid = 7 order by id asc [ RunTime:0.000414s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '38' LIMIT 1,100   [ RunTime:0.000307s ]
+SQL: select * from hao_category where pid = 7 order by id asc [ RunTime:0.000276s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '38' LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000276s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.010477s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\9d0babcb361c76b4b54c521c429b1099.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2017-04-29T22:52:32+08:00 ] 127.0.0.1 /index.php/Home/solve/index/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\daka\Application\Home\Controller\SolveController.class.php 第 18 行.
+SQL: DESCRIBE hao_category [ RunTime:0.074059s ]
+SQL: select * from hao_category where pid = 3 order by id asc [ RunTime:0.000386s ]
+SQL: select * from hao_category where id = 3 [ RunTime:0.000304s ]
+SQL: select * from hao_category where pid = 3 order by id asc [ RunTime:0.000366s ]
+SQL: DESCRIBE hao_article [ RunTime:0.009417s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '26'  [ RunTime:0.000489s ]
+SQL: select * from hao_category where pid = 3 order by id asc [ RunTime:0.000319s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '26' LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000286s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.012626s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\39683444e3c04299c0541eff2ce5489c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002858s ]
+
+[ 2017-04-29T22:52:34+08:00 ] 127.0.0.1 /index.php/Home/case/index/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\daka\Application\Home\Controller\CaseController.class.php 第 19 行.
+SQL: DESCRIBE hao_category [ RunTime:0.012269s ]
+SQL: select * from hao_category where pid = 4 order by id asc [ RunTime:0.000406s ]
+SQL: select * from hao_category where id = 4 [ RunTime:0.000299s ]
+SQL: select * from hao_category where pid = 4 order by id asc [ RunTime:0.000291s ]
+SQL: DESCRIBE hao_article [ RunTime:0.006890s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hao_article` WHERE `cate_id` = '30' LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '30' LIMIT 0,8   [ RunTime:0.000449s ]
+SQL: select * from hao_category where pid = 4 order by id asc [ RunTime:0.000439s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '30' LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000331s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.008225s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\04c95f841d5331322adc733700675acf.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2017-04-29T22:52:38+08:00 ] 127.0.0.1 /index.php/Home/about/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: DESCRIBE hao_category [ RunTime:0.013656s ]
+SQL: select * from hao_category where pid = 1 order by id asc [ RunTime:0.000395s ]
+SQL: select * from hao_category where id = 1 [ RunTime:0.000262s ]
+SQL: select * from hao_category where pid = 1 order by id asc [ RunTime:0.000319s ]
+SQL: DESCRIBE hao_article [ RunTime:0.008239s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '19' LIMIT 1   [ RunTime:0.000405s ]
+SQL: select * from hao_category where pid = 1 order by id asc [ RunTime:0.000323s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '19' LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000286s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.009365s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2017-04-29T22:52:40+08:00 ] 127.0.0.1 /index.php/Home/product/index/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: DESCRIBE hao_category [ RunTime:0.020902s ]
+SQL: select * from hao_category where pid = 2 order by id asc [ RunTime:0.000378s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '21' LIMIT 1   [ RunTime:0.000283s ]
+SQL: select * from hao_category where pid = 2 order by id asc [ RunTime:0.000303s ]
+SQL: select * from hao_category where id = 2 [ RunTime:0.000273s ]
+SQL: select * from hao_category where pid = 2 order by id asc [ RunTime:0.000333s ]
+SQL: DESCRIBE hao_article [ RunTime:0.011753s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = '21'  [ RunTime:0.000402s ]
+SQL: select * from hao_category where pid = 2 order by id asc [ RunTime:0.000338s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = '21' LIMIT 1   [ RunTime:0.000301s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.012198s ]
+SQL: select * from hao_exist where cate_id = 21 order by eid asc [ RunTime:0.001072s ]
+SQL: select * from hao_existr_attr where eid = 5 [ RunTime:0.000965s ]
+SQL: select * from hao_existr_attr where eid = 6 [ RunTime:0.000295s ]
+SQL: select * from hao_existr_attr where eid = 7 [ RunTime:0.000287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hao_goods` WHERE `cate_id` = 21 LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `hao_goods` WHERE `cate_id` = 21 LIMIT 0,8   [ RunTime:0.000858s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000321s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.013269s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\3458861da0342b1f9413030055ee3fb6.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-04-29T22:52:49+08:00 ] 127.0.0.1 /index.php/Home/product/detail/id/1/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.009788s ]
+SQL: SELECT * FROM `hao_goods` WHERE `gid` = '1' LIMIT 1   [ RunTime:0.001597s ]
+SQL: select he.exist_name,ha.attr_name from hao_exist as he,hao_existr_attr as ha where he.eid = ha.eid and ha.attr_id = 8 [ RunTime:0.000407s ]
+SQL: select he.exist_name,ha.attr_name from hao_exist as he,hao_existr_attr as ha where he.eid = ha.eid and ha.attr_id = 1 [ RunTime:0.000354s ]
+SQL: select he.exist_name,ha.attr_name from hao_exist as he,hao_existr_attr as ha where he.eid = ha.eid and ha.attr_id = 12 [ RunTime:0.000466s ]
+SQL: DESCRIBE hao_category [ RunTime:0.009556s ]
+SQL: select * from hao_category where id = 2 [ RunTime:0.000366s ]
+SQL: select * from hao_category where pid = 2 order by id asc [ RunTime:0.000340s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0  [ RunTime:0.000316s ]
+SQL: DESCRIBE hao_basic [ RunTime:0.012038s ]
+SQL: SELECT * FROM `hao_basic` WHERE `basic_name` = 'webname' LIMIT 1   [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\f63daca541365d43e0e0013fdf66e7d5.php 第 68 行.
+NOTIC: [8] Undefined variable: now_son D:\phpStudy\WWW\daka\Application\Runtime\Cache\Home\f63daca541365d43e0e0013fdf66e7d5.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.184772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.184838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+

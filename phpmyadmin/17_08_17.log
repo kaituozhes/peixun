@@ -1,0 +1,10 @@
+[ 2017-08-17T14:45:16+08:00 ] 58.23.209.19 /index.php/Home/img/icon_modal-close.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-17T14:45:16+08:00 ] 58.23.209.19 /index.php/Home/entry/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

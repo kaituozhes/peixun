@@ -1,0 +1,260 @@
+<extend name="public/base" />
+<block name="main">
+	<style>
+		.hs_diy a{color:white;}
+	</style>
+	 <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                网站 栏目列表
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li class="am-active">栏目列表</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 列表
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <!-- <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+                <div class="tpl-block">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs hs_diy">
+                                    <button type="button" class="am-btn am-btn-default am-btn-success">
+                                    	<span class="am-icon-plus"></span>
+                                    	<a href="{:U('category/add')}">新增</a>
+                                    </button>
+<!--                                     <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 装饰</button>
+<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 装饰</button>
+<button id="delete" type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                           <!--  <div class="am-input-group am-input-group-sm">
+                               <input type="text" class="am-form-field">
+                               <span class="am-input-group-btn">
+                                                               <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
+                                                             </span>
+                           </div> -->
+                        </div>
+                    </div>
+                    <div class="am-g">
+                        <div class="am-u-sm-12">
+                            <form class="am-form">
+                                <table class="am-table am-table-striped am-table-hover table-main">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-check"><input type="checkbox" name="all" value="" class="tpl-table-fz-check"></th>
+                                            <th>id</th>
+                                            <th class="table-title">栏目名</th>
+                                            <th class="table-title">栏目英文名</th>
+                                            <th class="table-title">栏目描述</th>
+                                            <th class="table-type">控制器</th>
+                                            <th class="table-type">方法</th>
+                                            <th class="table-title">SEO标题</th>
+                                            <th class="table-title">SEO关键字</th>
+                                            <th class="table-title">SEO网站描述</th>
+                                            <th class="table-title">栏目图片</th>
+                                            <th class="table-type">栏目排序</th>
+                                            <th class="table-type">隐藏栏目</th>
+                                            <th class="table-type">栏目定位</th>
+                                            <th class="table-type">父id</th>
+                                            <th class="table-set">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    	<volist name="list" id="data" key="key">
+                                        <tr>
+                                            <td><input type="checkbox" class="input" name="id[]" value="{$data['id']}" ></td>
+                                            <td>{$data['id']}</td>
+                                            <td style="text-indent:{$data['level']*30}px">{$data['catename']}</td>
+                                            <td>
+                                                <button type="button" class="am-btn am-btn-success" style="background:#5EB95E;" data-am-modal="{target:'#doc-modal-{$key}4', closeViaDimmer: 0, width: 400, height: 260}">
+                                                  查看
+                                                </button>
+                                                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-{$key}4">
+                                                  <div class="am-modal-dialog">
+                                                    <div class="am-modal-hd">栏目英文名
+                                                      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                                    </div>
+                                                    <div class="am-modal-bd">
+                                                      {$data['enname']}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="am-btn am-btn-success" style="background:#5EB95E;" data-am-modal="{target:'#doc-modal-{$key}5', closeViaDimmer: 0, width: 400, height: 260}">
+                                                  查看
+                                                </button>
+                                                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-{$key}5">
+                                                  <div class="am-modal-dialog">
+                                                    <div class="am-modal-hd">栏目描述
+                                                      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                                    </div>
+                                                    <div class="am-modal-bd">
+                                                      {$data['cateinfo']}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                            <td>{$data['controller']}</td>
+                                            <td class="am-hide-sm-only">{$data['function']}</td>
+                                            <td class="am-hide-sm-only">
+                                                <button type="button" class="am-btn am-btn-success" style="background:#5EB95E;" data-am-modal="{target:'#doc-modal-{$key}6', closeViaDimmer: 0, width: 400, height: 260}">
+                                                  查看
+                                                </button>
+                                                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-{$key}6">
+                                                  <div class="am-modal-dialog">
+                                                    <div class="am-modal-hd">SEO标题
+                                                      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                                    </div>
+                                                    <div class="am-modal-bd">
+                                                      {$data['title']}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                            <td class="am-hide-sm-only">
+                                                <button type="button" class="am-btn am-btn-success" style="background:#5EB95E;" data-am-modal="{target:'#doc-modal-{$key}7', closeViaDimmer: 0, width: 400, height: 260}">
+                                                  查看
+                                                </button>
+                                                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-{$key}7">
+                                                  <div class="am-modal-dialog">
+                                                    <div class="am-modal-hd">SEO关键字
+                                                      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                                    </div>
+                                                    <div class="am-modal-bd">
+                                                      {$data['keywords']}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                            <td class="am-hide-sm-only">
+                                                <button type="button" class="am-btn am-btn-success" style="background:#5EB95E;" data-am-modal="{target:'#doc-modal-{$key}7', closeViaDimmer: 0, width: 400, height: 260}">
+                                                  查看
+                                                </button>
+                                                <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-{$key}7">
+                                                  <div class="am-modal-dialog">
+                                                    <div class="am-modal-hd">SEO描述
+                                                      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                                                    </div>
+                                                    <div class="am-modal-bd">
+                                                      {$data['description']}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </td>
+                                            <td class="am-hide-sm-only"><if condition="$data['cateimg']"><img src="__PUBLIC__/{$data['cateimg']}" width="100px" height="50px"><else/>无</if></td>
+                                            <td class="am-hide-sm-only">{$data['sort']}</td>
+                                            <td class="am-hide-sm-only">
+                                            	<switch name="data['hidden']">
+													<case value="1">隐藏</case>
+													<case value="2">显示</case>
+                                            	</switch>
+                                            </td>
+                                            <td class="am-hide-sm-only">
+                                            	<switch name="data['position']">
+													<case value="1">顶部</case>
+													<case value="2">底部</case>
+                                            	</switch>
+                                            </td>
+                                            <td>{$data['pid']}</td>
+                                            <td>
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="{:U('category/edit',array('id'=>$data['id']))}">编辑</a></button>
+                                                        <button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="{:U('category/add_son',array('id'=>$data['id']))}" style="color:black;">添加子类</a></button>
+                                                        <button type="button" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span><a href="{:U('category/del',array('id'=>$data['id']))}" style="color:#dd514c;">删除</a></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </volist>
+                                    </tbody>
+                                </table>
+                                
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+        </div>
+<script>
+$(function(){
+    $('input[name=all]').click(function(){
+        if($(this).is(':checked')){
+            $('input').prop('checked','true');
+        }else{
+            $('input').removeAttr('checked');
+        }
+    })
+    var ibool,jbool;
+    var i = 0;
+    $('.input').click(function(){
+        if($(this).is(':checked')){
+            var s = hascheck();
+            if(s == 1){
+                $('input[name=all]').prop('checked','true');
+            }
+        }else{
+            if($('input[name=all]').is(':checked')){
+                $('input[name=all]').removeAttr('checked');
+            }
+        }
+    })
+    function hascheck()
+    {
+        var ibool,jbool;
+        $('.input').each(function(){
+            console.log($(this).is(':checked'));
+            if($(this).is(':checked')){
+                ibool = 1;
+            }else{
+                jbool = 2;
+            }
+        })
+        if(jbool == 2){
+            return jbool;
+        }else{
+            return ibool;
+        }
+    }
+    $('#delete').click(function(){
+        var delid = '';
+        $('.input').each(function(){
+            if($(this).is(':checked')){
+                delid += $(this).val()+',';        
+            }
+        })
+        if(delid.length != 0){
+            var shrink = delid.length;
+            delid = delid.substr(0,Number(shrink) - 1);
+            $.post("{:U('category/delcate')}",{delid:delid},function(msg){
+                if(msg == 1){
+                    alert('删除成功');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('删除失败');
+                }
+            })
+        }        
+    })
+})
+</script>
+</block>

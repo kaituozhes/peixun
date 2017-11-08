@@ -1,0 +1,128 @@
+<extend name="public/base" />
+<block name="main">
+<div class="clear"></div>
+<div class="slides">
+  <!-- header END -->
+  <div class="slide slide-2325" id="id_05d8ef6867fa48f5894faca26312c7e4" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="border-top-style:solid; -webkit-animation-iteration-count:1; border-bottom-width:0px; -webkit-animation-duration:1s; padding-bottom:0px; padding-top:20px; border-top-width:0px; border-left-color:#DDD; background-size:cover; background-repeat:no-repeat; border-right-style:solid; padding-right:0px; border-left-style:solid; border-top-color:#DDD; background-position:50% 50%; border-bottom-color:#DDD; border-right-color:#DDD; animation-delay:0; z-index:0; animation-iteration-count:1; animation-duration:1s; border-bottom-style:solid; -webkit-animation-delay:0; border-right-width:0px; border-left-width:0px; padding-left:0px; ">
+   
+      <div class="s-container" style="max-width:1100px; margin-right:auto; margin-left:auto; ">
+        <div no-link="true">
+          <div class="mianbiaoxie d-legacy">
+            <div class="b-macros-breadcrumb b-breadcrumb">
+              <ol class="breadcrumb">
+                <li>
+                  <a class="u-cursor" href="/">首页</a></li>
+                <volist name="abc" id="vo">
+                      <li><a class="u-cursor" href="{:U('micarticle/index',array('id'=>$vo[id]))}">{$vo.catename}</a></li>
+                  </volist>
+              </ol>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide slide-2326" id="id_9b8881e8819c42e282503b834de489fb" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="border-top-style:solid; border-bottom-width:0px; padding-bottom:0px; padding-top:20px; border-top-width:0px; border-left-color:#DDD; background-size:cover; background-repeat:no-repeat; border-right-style:solid; padding-right:0px; border-left-style:solid; border-top-color:#DDD; background-position:50% 50%; border-bottom-color:#DDD; border-right-color:#DDD; z-index:0; border-bottom-style:solid; border-right-width:0px; border-left-width:0px; padding-left:0px; ">
+      <div class="s-container" style="border-top-style:solid; border-top-width:1px; border-bottom-style:solid; border-bottom-width:1px; border-right-color:#DDD; margin-right:auto; border-right-style:solid; border-right-width:1px; border-left-style:solid; margin-left:auto; max-width:1100px; border-top-color:#DDD; border-bottom-color:#DDD; border-left-width:1px; border-left-color:#DDD; ">
+        <div no-link="true">
+          <div class="b-filter d-legacy">
+            <style>/* nofmt */ .zifen {background: #FAFAFA;padding-top: 5px;} .filter-category {margin-bottom:20px; background: #fff; border: 1px solid #ddd;} .filter-category dl{} .filter-category dl + dl{border-top:1px dotted #ddd;} .filter-category dl dt{line-height: 37px; color:#DB5c96; float:left;text-indent: 10px;} .filter-category dl dd{padding:10px 0 0 10px; background:#fff; margin-left:55px;} .filter-category dl dd a{display: inline-block; height:19px; line-height:19px; overflow:hidden; margin: 0 4px 4px; padding:0 5px;} .filter-category dl dd a:hover,.filter-category dl dd a.curr{background-color: #DB5c96; color: #fff; text-decoration:none;border-radius: 1px;} .filter-brand { /* border: 1px solid #ddd; */ } .filter-brand-item { float: left; border: 1px solid #DDD; margin: -1px -1px 0 0; text-align: center; } .filter-brand-item a { display: block; width: 95px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 2px; font-size: 12px; } .filter-brand-item img { width: 99px; } .filter-brand-name { display: block; margin: 2px auto; } .filter-brand-name:hover { text-decoration: none !important; } .filter-brand-name span { color: #999; } .filter-brand .filter-brand-item { display: none; } .filter-brand .filter-brand-item:first-child { display: block; } .filter-brand.slick-initialized .filter-brand-item { display: block; } .filter-brand-item:focus { outline-style: none; } .filter-brand-item.active { background-color: #eee; font-weight: bold; }</style>
+            <div class="filter-category">
+              <dl class="b-category-dl">
+                <dt>工作方案分类：</dt>
+                <dd>
+                <volist name="Crumbs" id="vo">
+                  <a class="curr" href="{:U('micarticle/index',array('id'=>$vo[pid]))}">全部</a>
+                </volist>  
+                  <volist name="Crumbs" id="vo">
+                  <a class="curr" href="{:U('micarticle/index',array('id'=>$vo[id]))}">{$vo.catename}</a></dd>
+                  </volist>
+              </dl>
+            </div>
+            <script>if (typeof $.fn.slick === 'function') {
+                $('.filter-brand-item').css('margin-top', 0);
+                $('.filter-brand').slick({
+                  slidesToShow: 11,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  infinite: true,
+                  speed: 2000,
+                  autoplaySpeed: 0,
+                  cssEase: 'linear'
+                });
+              } else {
+                $('.filter-brand-item').show();
+              }</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide slide-2315" id="id_eb49ce589265484da137af55121b46cc" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="background-size:cover; border-top-width:0px; border-left-color:#DDD; background-repeat:no-repeat; border-top-style:solid; border-left-width:0px; border-bottom-width:0px; border-right-color:#DDD; border-bottom-color:#DDD; border-right-style:solid; z-index:0; border-left-style:solid; padding-bottom:0px; border-right-width:0px; border-top-color:#DDD; background-position:50% 50%; padding-top:20px; border-bottom-style:solid; ">
+      <div class="s-container" style="background-size:cover; background-repeat:no-repeat; margin-right:auto; margin-left:auto; max-width:1100px; background-position:50% 50%; ">
+        <div no-link="true">
+          <div class="sort d-legacy b-group-border1">
+            <dl>
+              <dd class="curr">
+                <a href="__APP__/Home/micarticle/index/id/{$id}" class="b-group-text1">默认排序</a></dd>
+              <dd>
+  <a href="__APP__/Home/micarticle/inde/id/{$id}" class="b-group-text1">发布时间
+  <if condition="$desc eq 1">
+    <i></i>
+  <else />
+  <i style="background:url(http://s2.d2scdn.com/photos/2015/03/31/rY9kTnKxfbXVmCRiMYFQUR.png) no-repeat -85px -108px;"></i>
+  </if> 
+  </a>
+</dd>
+            </dl>
+            <div class="right b-group-text1">共
+              <span>{$num}</span>个结果</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide slide-2388" id="id_0adafdd14afe4a7fab8d58724596c48f" data-slide_settings="{&quot;auto_center_width&quot;:&quot;1100px&quot;,&quot;auto_center_type&quot;:&quot;none&quot;}">
+    <div class="s-root s-layout-a " style="border-top-style:solid; -webkit-animation-iteration-count:1; border-bottom-width:0px; -webkit-animation-duration:1s; padding-bottom:0px; padding-top:15px; border-top-width:0px; border-left-color:#DDD; background-size:cover; background-repeat:no-repeat; border-right-style:solid; padding-right:0px; border-left-style:solid; border-top-color:#DDD; background-position:50% 50%; border-bottom-color:#DDD; border-right-color:#DDD; animation-delay:0; z-index:0; animation-iteration-count:1; animation-duration:1s; border-bottom-style:solid; -webkit-animation-delay:0; border-right-width:0px; border-left-width:0px; padding-left:0px; ">
+      <div class="s-container" style="max-width:1100px; margin-right:auto; margin-left:auto; ">
+        <div no-link="true">
+          <ul class="wrap js_plugin_paginate_items clearfix">
+
+            <volist name="catearc" id='vo' i ='$i'>
+            <li class="b-amount-1">
+              <a href="{:U('article/index',array('id'=>$vo['tid']))}" target="_blank" class="tit">
+                <div class="list b-group-border1 clearfix">
+                  <div class="num"><div class="yue b-group-text4 b-group-border3">{$vo.pubdate|date='m',###}</div><div class="ri b-group-text5 b-group-border4">{$vo.pubdate|date='d',###}</div></div>
+                  <div class="text-wrap">
+                    <h3 class="b-group-text1">{$vo.title}</h3>
+                    <div class="descrip b-group-text2">{$vo.description}</div>
+                    <div class="hupji clearfix">
+                      <div class="price"></div>
+                      <div class="dis-wrap">
+                        <div class="s-button_form1 s-components-button " click-button-form="slide.components.button_form1" style="padding-top:10px; "></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            </volist>
+           
+          </ul>
+          <div class="clearfix"></div>
+          <div class="fenye d-legacy">
+            <div class="page">
+              {$page}
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer START --></div>
+<div class="footclear"></div>
+</block>

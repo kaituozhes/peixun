@@ -1,0 +1,53 @@
+<style>
+.clearfix:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.margin1487{width: 1487px;margin: 0 auto;}
+body{background: #f1f1f1;}
+#gHead .gHeadM1{background: #000!important;}
+#gHead .gHeadM1 .gHeadM1M{height: 45px;}
+#gHead .gHeadM1 .gHeadM1M p:first-child{float: left;line-height: 45px;font-size: 22px;color: #fff;text-indent: 16px;}
+#gHead .gHeadM1 .gHeadM1M p:last-child{float: right;width: auto;background: #111111;color: #fff;font-size: 22px;line-height: 45px;}
+#gHead .gHeadM1 .gHeadM1M p:last-child a{color: #fff;}
+#gHeadM2M h1{height: 93px;}
+#gHeadM3{height: 82px;background: #073763;}
+#gHeadM3 .gHeadM3Nav{height: 82px;padding-left: 74px;padding-top: 6px;}
+#gHeadM3 .gHeadM3Nav li{float: left;height: 76px;line-height: 76px;font-size: 23px;}
+#gHeadM3 .gHeadM3Nav li a{color:#fff;line-height: 76px;display: block;}
+#gHeadM3 .gHeadM3Nav li a:hover{color:#073763;background: #c4cfda;}
+#gHeadM3 .gHeadM3Nav li:nth-child(1) a{padding:0 48px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(2) a{padding: 0 38px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(3) a{padding: 0 77px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(4) a{padding: 0 38px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(5) a{padding: 0 76px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(6) a{padding: 0 36px;}
+#gHeadM3 .gHeadM3Nav li:nth-child(7) a{padding: 0 76px;}
+#gHeadM4{padding-top: 26px;padding-bottom: 62px;height: 517px;}
+#gHeadM4 .gHeadM4Banner{height: 517px;}
+</style>
+<div id="gHead">
+	<div class="gHeadM1">
+		<div class="gHeadM1M margin1487">
+			<p>欢迎进入国家开源技术培训学校 </p>
+			<if condition="$logintype eq 2">
+				<p>请 <a href="{:U('user/login')}">登录</a> 或 <a href="{:U('user/register')}">免费注册</a></p>
+			<elseif condition="$logintype eq 1" />
+				<p>欢迎您,<a href="{:U('member/index')}">{$visitor['member_name']}</a></p>
+			</if>
+		</div>
+	</div>
+	<div id="gHeadM2M margin1487">
+		<h1><a href="#"><img src="__PUBLIC__/web/images/logo_Px.png" alt="中国开源云联盟"></a></h1>
+	</div>
+	<div id="gHeadM3">
+		<ul class="gHeadM3Nav margin1487">
+			<li><a href="/">首页</a></li>
+			<volist name="topcate" id="top">
+				<li><a href="__APP__/Home/{$top['controller']}/{$top['function']}/id/{$top['id']}">{$top['catename']}</a></li>
+			</volist>
+			<if condition="$logintype eq 2">
+				<li><a href="{:U('user/login')}">登录</a></li>
+			<else />
+				<li><a href="{:U('user/loginout')}">退出</a></li>
+			</if>
+		</ul>
+	</div>
+</div>

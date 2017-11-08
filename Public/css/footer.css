@@ -1,0 +1,27 @@
+*{padding:0;margin:0}
+#footer{margin-top:20px;float:left;width:100%;height:350px;background:#eee;color:#666;font-size:13px;}
+
+#meilishuo_msg{width:100%;height:200px;}
+a,p{font-size:13px;color:#666;text-decoration:none;}
+.a{padding: 5px}
+a:hover{color:#FF3E96}
+
+h4{color:#666;}
+
+#telephone{float:left;padding:40px}
+
+.mes_list{float:left;width:150px;padding-top:40px}
+
+ul{list-style:none}
+
+#weixin{float:left; padding:10px;padding-top:40px}
+#client{float:left;padding:10px;padding-top:40px}
+#bottom{padding:20px;}
+#friendlink{height:30px;border:1px solid #eee;float:left;
+			border-top-color:#ddd;line-height:30px;
+			border-bottom-color:#ddd;overflow: hidden;
+			}
+#friendlink ul{margin-left: 60px;}
+#friendlink ul li{float: left;width: 130px;}
+#record{height:50px;padding-top:15px;float:left;}
+#link_run{width:1000px;height: 30px;margin-top: -30px;}

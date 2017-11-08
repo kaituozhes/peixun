@@ -1,0 +1,1844 @@
+[ 2017-08-18T10:49:19+08:00 ] 66.102.6.205 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.109379s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.018556s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.004883s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.030274s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.005859s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.009766s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.006837s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.026368s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000977s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000977s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.028321s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.002930s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-08-18T10:49:41+08:00 ] 61.149.85.206 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.006836s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000976s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.006837s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.008789s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.007813s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-08-18T10:57:26+08:00 ] 119.40.58.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.008789s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.007812s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.007812s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.006837s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.007812s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.006837s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.008789s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-08-18T10:58:51+08:00 ] 119.40.58.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.006836s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.007813s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.006836s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000976s ]
+SQL: DESCRIBE hao_category [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-08-18T11:01:27+08:00 ] 119.40.58.2 /index.php/Home/user/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.008789s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.007812s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-08-18T11:08:33+08:00 ] 61.149.85.206 /index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.008789s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-08-18T11:08:43+08:00 ] 61.149.85.206 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.007813s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.006837s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.006837s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.007814s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.007813s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.008791s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000976s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000977s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.008790s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-08-18T11:26:19+08:00 ] 61.149.85.206 /index.php/Home/article/index/id/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: SELECT * FROM `hao_category` WHERE `id` = 47 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_article [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE ( tid=47 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\project\peixun\Application\Home\Controller\ArticleController.class.php 第 12 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE ( tid=47 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' D:\project\peixun\Application\Home\Controller\ArticleController.class.php 第 26 行.
+SQL: SELECT * FROM `hao_category` WHERE ( id=105 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' D:\project\peixun\Application\Home\Controller\ArticleController.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' D:\project\peixun\Application\Home\Controller\ArticleController.class.php 第 30 行.
+SQL: SELECT * FROM `hao_category` WHERE `id` = 105 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = 86 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `id` = 86 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 86  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_article [ RunTime:0.015622s ]
+SQL: SELECT `cate_id` FROM `hao_article` WHERE `tid` = 47 LIMIT 1   [ RunTime:0.000000s ]
+SQL: select tid from hao_article where tid > 47 and cate_id = 105 order by tid asc limit 0,1 [ RunTime:0.000000s ]
+SQL: select tid from hao_article where tid < 47 and cate_id = 105 order by tid desc limit 0,1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 96 行.
+SQL: SELECT * FROM `hao_article` WHERE `tid` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `tid` = 43 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE ( tid=47 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\project\peixun\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:34:52+08:00 ] 119.40.58.2 /index.php/Home/user/ajax_username.html?username=2017081601
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_member` WHERE `member_name` = '2017081601' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:35:00+08:00 ] 119.40.58.2 /index.php/Home/user/ajax_username.html?username=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_member` WHERE `member_name` = '123456' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:35:01+08:00 ] 119.40.58.2 /index.php/Home/user/ajax_username.html?username=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_member` WHERE `member_name` = '123456' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:35:14+08:00 ] 119.40.58.2 /index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:35:16+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:35:57+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant number - assumed 'number' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 2 AND `bianhao` = '2017081601' AND `code` = '130421198701023312' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:36:23+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:36:26+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:36:57+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.002928s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.002928s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.003903s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.017566s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 158 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant codes - assumed 'codes' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 5 AND `bianhao` = '1234567890' AND `code` = '16666@qq.com' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:02+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:06+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 158 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant codes - assumed 'codes' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 5 AND `bianhao` = '1234567890' AND `code` = '16666@qq.com' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:09+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:13+08:00 ] 119.40.58.2 /index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:14+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:37:52+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 158 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant codes - assumed 'codes' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 5 AND `bianhao` = '1234567890' AND `code` = '16666@qq.com' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:27+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:31+08:00 ] 119.40.58.2 /index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:34+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015614s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:43+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015609s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant number - assumed 'number' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 2 AND `bianhao` = '111111111111111111111111111111111' AND `code` = '111111111111111111111111111111111' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:47+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: arr D:\project\peixun\Application\Runtime\Cache\Home\0d992a05cc66b33f0c1293f89c2774a7.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:38:49+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.015610s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant number - assumed 'number' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 2 AND `bianhao` = '111111111111111111111111111111111' AND `code` = '111111111111111111111111111111111' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:39:16+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant number - assumed 'number' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 155 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 2 AND `bianhao` = '11111111111111111111111111111111111' AND `code` = '11111111111111111111111111111111111' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T11:40:00+08:00 ] 119.40.58.2 /index.php/Home/user/useredit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015609s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_member [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 152 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 158 行.
+NOTIC: [8] Use of undefined constant member_auth - assumed 'member_auth' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Use of undefined constant codes - assumed 'codes' D:\project\peixun\Application\Home\Controller\UserController.class.php 第 159 行.
+SQL: SELECT * FROM `hao_member` WHERE `member_auth` = 5 AND `bianhao` = '111111111111111111111' AND `code` = '111111111111111111111' LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:03:49+08:00 ] 119.40.58.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.015626s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:03:53+08:00 ] 119.40.58.2 /index.php/Home/prove/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: a D:\project\peixun\Application\Runtime\Cache\Home\0c37ae9a54501130ce0e0da86988eb38.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:04:02+08:00 ] 119.40.58.2 /index.php/Home/prove/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE hao_certifi [ RunTime:0.015626s ]
+SQL: select ce.*,ag.* from hao_certifi as ce,hao_agency as ag where ce.agency = ag.agency_id and ce.certifi_number='0123456789'limit 1 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: realname D:\project\peixun\Application\Runtime\Cache\Home\0c37ae9a54501130ce0e0da86988eb38.php 第 106 行.
+NOTIC: [8] Undefined index: birth D:\project\peixun\Application\Runtime\Cache\Home\0c37ae9a54501130ce0e0da86988eb38.php 第 109 行.
+NOTIC: [8] Undefined index: course D:\project\peixun\Application\Runtime\Cache\Home\0c37ae9a54501130ce0e0da86988eb38.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:05:01+08:00 ] 119.40.58.2 /index.php/Home/prove/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: a D:\project\peixun\Application\Runtime\Cache\Home\0c37ae9a54501130ce0e0da86988eb38.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2017-08-18T14:05:15+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: res D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 0 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: realname D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:18:44+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '123456789011111' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:22:04+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.015625s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '123456789011111' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 21 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:22:44+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '123456789011111' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:23:05+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '123456789011111' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:24:57+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '123456789011111' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 17 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:25:14+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '0987654321' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 21 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:25:37+08:00 ] 119.40.58.2 /index.php/Home/prove/jiangshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( pid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( pid= ) 
+SQL: SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `hao_category` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Use of undefined constant lecturer - assumed 'lecturer' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 105 行.
+SQL: DESCRIBE hao_lecturer [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_lecturer` WHERE `numbering` = '0987654321' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 109 行.
+SQL: DESCRIBE hao_subject [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 21 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Undefined variable: kemus D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+SQL: SELECT * FROM `hao_subject` WHERE `subject_id` = 20 LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant subject_name - assumed 'subject_name' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 114 行.
+NOTIC: [8] Use of undefined constant subject - assumed 'subject' D:\project\peixun\Application\Home\Controller\ProveController.class.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 115 行.
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' D:\project\peixun\Application\Runtime\Cache\Home\269ed26185f7c771c0162be51bed4c9c.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:44:35+08:00 ] 119.40.58.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.015625s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-18T14:44:58+08:00 ] 119.40.58.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_basic [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_basic` WHERE `bid` = 22 LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_goods [ RunTime:0.015626s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_goods
+SQL: DESCRIBE hao_area [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_music_cate [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : DESCRIBE hao_music_cate
+SQL: DESCRIBE hao_article [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_goods' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_goods` WHERE `if_index` = 1 LIMIT 1  
+SQL: SELECT `name` FROM `hao_area` WHERE `id` = null LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_music_cate`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'peixun.hao_music_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hao_music_cate` 
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 101 ORDER BY pubdate desc LIMIT 0,5   [ RunTime:0.015626s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 95 ORDER BY sort asc LIMIT 0,1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_article` WHERE `cate_id` = 96 ORDER BY sort asc LIMIT 0,3   [ RunTime:0.000000s ]
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=97 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=98 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=99 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 105 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 115 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 143 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 171 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\project\peixun\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

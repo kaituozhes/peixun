@@ -1,0 +1,35 @@
+<extend name="tong/base"/>
+<block name="main">
+<foreach name="cate" item="ca">
+<div id="banner" style="background: #fff url({$ca['cateimg']}) top center no-repeat;position:relative;top:0;">
+	<div class="w1200">
+		<div class="name">{$ca['catename']}</div>
+	</div>
+</div>
+</foreach>
+  <div class="brandwarp container">
+  <div class="w1200">
+    <div class="path" style="display:none;">
+      <a href="">Home</a>&gt;
+      <a href="">关于基康</a>&gt;
+      <a href="">公司简介</a></div>
+    <div class="cont-box">
+			<include file="about/left" />
+       <div class="channel-container news-container ovh">
+          <div class="news-cont">
+            <div class="top">
+              <h1>{$find_one['title']}</h1>
+              <span>{$find_one['addtime']|date="Y-m-d H:i:s",###}</span>
+              <span>作者:<if condition="$find_one['autor']">{$find_one['autor']}<else/>佚名</if></span>
+              <span>
+                <a href="" target="_blank">来源:<if condition="$find_one['autor']">{$find_one['autor']}<else/>佚名</if></a></span>
+            </div>
+            <div class="news-cont-edit">
+              {$find_one['body']}
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</block>

@@ -1,0 +1,210 @@
+.order_header{
+	height:34px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	width:1200px;
+}
+.my_order_form{
+	background:rgba(0,0,0,0)url("../images/my_order_form.png") no-repeat scroll 0 0;
+	display:block;
+	height:32px;
+	width:121px;
+}
+.route{
+	height:28px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:14px;
+	width:1200px;
+}
+.red_ff{
+	color:#f69;
+	margin:0 3px !important;
+}
+/*body{
+	color:#666;
+	font-family:Arial;
+	font-size:12px;
+}*/
+a{
+	color:#666;
+	text-decoration:none;
+}
+.order_area{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	width:1200px;
+}
+element.style{
+	width:576px;
+}
+.flowStep{
+	margin:auto !important;
+}
+.order_status div,.order_express div,.order_address div,.order_goods div,.order_connect div,.order_status_bar div {
+	margin-bottom:20px;
+	line-height:24px;
+}
+.chart{
+	height:13px;
+	margin-bottom:20px;
+	overflow:hidden;
+	position:relative;
+}
+.line{
+	background:#ef7b9d none repeat scroll 0 0;
+	height:1px;
+	overflow:hidden;
+	position:absolute;
+	top:5px;
+	z-index:1;
+	/*margin-top:10px;*/
+}
+
+.order_status_bar{
+	border:1px solid #ddd;
+	line-height:24px;
+	margin-top:10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:35px;
+	height:130px;
+
+}
+.action{
+	float:left;
+	text-align:center;
+	margin-top:-15px;
+}
+.active1{
+	float:left;
+	text-align:center;
+	margin-top:-15px;
+}
+.ball{
+	height:13px;
+	width:13px;
+	background:#f69;
+	border-radius:50%;
+	/*margin-top:-20px;*/
+}
+.ballon{
+	height:13px;
+	width:13px;
+	background:#f69;
+	border-radius:50%;
+}
+.order_address{
+	border:1px solid #ddd;
+	margin-top:15px;
+	padding:15px;
+	padding-left:20px;
+	padding-top:0px;
+	height:150px;
+}
+.order_address h4{
+	border-bottom:1px solid #e6e6e6;
+	font-size:14px;
+	line-height:36px;
+	margin-bottom:10px;
+}
+.order_address p{
+	margin:0;
+	padding:0;
+}
+.order_goods{
+	border-top:1px solid #DDD;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	line-height:18px;
+	width:100%;
+}
+.order_list thead th{
+	background-color:#f9f9f9;
+	font-size:12px;
+	font-weight:normal;
+	height:44px;
+	text-align: center;
+}
+.order_info td{
+	border-bottom:1px solid #ddd;
+	height:38px;
+	text-align:left;
+}
+.order_info span{
+	margin-left:20px;
+}
+.order_info a{
+	color:#F69;
+}
+.getser{
+	border:1px solid #ff6699;
+	margin-left:6px;
+	padding:4px 13px;
+}
+.order_goods_goods{
+	padding-left:20px;
+	text-align:left;
+}
+.order_goods_list td{
+	padding-bottom:14px;
+	padding-top:14px;
+}
+.pic{
+	border:1px solid #eee;
+	float:left;
+	height:70px;
+	width:70px;
+	margin-top:-7px;
+}
+.title{
+	height:54px;
+	line-height:18px;
+	margin-left:85px;
+	overflow:hidden;
+	margin-top:-7px;
+	text-align:left;
+}
+.prop{
+	color:#999;
+	margin-left:85px;
+	margin-top:-10px;
+	text-align:left;
+}
+.ticket div{
+	margin-bottom:0;
+	margin-top:-13px;
+	margin-left:10px;
+	color:#f69;
+}
+.order_goods_list td {
+	text-align:center;
+}
+.order_timer{
+	border-top:1px solid #ddd;
+	overflow:hidden;
+	padding:14px 20px;
+	width:100%;
+	margin-left:-5px;
+}
+ul,li{
+	list-style:outside none none;
+}
+.order_timer p span {
+	margin-right:30px;
+}
+
+
+.last{
+	margin-right:0;
+}
+.last span{
+	margin-right:40px;
+	float:right;
+}

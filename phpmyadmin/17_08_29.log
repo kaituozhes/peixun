@@ -1,0 +1,9 @@
+[ 2017-08-29T10:51:38+08:00 ] 115.234.18.152 /index.php/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-29T18:36:24+08:00 ] 116.236.255.42 /index.php/Index/search.html?keywords=Xuhui
+ERR: 无法加载模块:Index
+

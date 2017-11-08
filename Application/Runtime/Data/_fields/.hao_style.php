@@ -1,0 +1,1 @@
+a:6:{i:0;s:3:"fid";i:1;s:7:"cate_id";i:2;s:9:"stylename";i:3;s:8:"if_index";s:3:"_pk";s:3:"fid";s:5:"_type";a:4:{s:3:"fid";s:7:"int(10)";s:7:"cate_id";s:7:"int(10)";s:9:"stylename";s:12:"varchar(255)";s:8:"if_index";s:10:"tinyint(2)";}}

@@ -1,0 +1,28 @@
+<div id="gHead">
+	<div class="gHeadM1">
+		<div class="gHeadM1M margin1200">
+			<p>欢迎来到云计算开源技术架构师系列培训网站 </p>
+			<if condition="$logintype eq 2">
+				<p>请 <a href="{:U('user/login')}">登录</a> 或 <a href="{:U('user/register')}">免费注册</a></p>
+			<elseif condition="$logintype eq 1" />
+				<p>欢迎您,<a href="{:U('member/index')}">{$visitor['member_name']}</a> | <a href="{:U('user/loginout')}">退出</a></p>
+			</if>
+		</div>
+	</div>
+	<div id="gHeadM2M" class="margin1200">
+		<h1><a href="#"><img src="__PUBLIC__/web/images/logo_Px.png" alt="中国开源云联盟"></a></h1>
+	</div>
+	<div id="gHeadM3">
+		<ul class="gHeadM3Nav margin1200">
+			<li><a href="/">首页</a></li>
+			<volist name="topcate" id="top">
+				<li><a href="__APP__/Home/{$top['controller']}/{$top['function']}/id/{$top['id']}">{$top['catename']}</a></li>
+			</volist>
+			<!-- <if condition="$logintype eq 2">
+				<li><a href="{:U('user/login')}">登录</a></li>
+			<else/>
+				<li><a href="{:U('user/loginout')}">退出</a></li>
+			</if> -->
+		</ul>
+	</div>
+</div>

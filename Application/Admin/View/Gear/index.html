@@ -1,0 +1,122 @@
+<extend name="public/base" />
+<block name="main">
+<style>
+#page div{position: relative;padding-left: 0;margin: 1.5rem 0;list-style: none;color: #999;text-align: left;}
+#page div a{color: #23abf0;border-radius: 3px;padding: 6px 12px;    position: relative;display:inline-block;text-decoration: none;line-height: 1.2;background-color: #fff;border: 1px solid #ddd;margin-bottom: 5px;margin-right: 5px;}
+#page div span{background: #23abf0;color: #fff;border: 1px solid #23abf0;padding: 2px 12px;border-radius: 3px;display:inline-block;margin-right:5px;}
+</style>
+<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                网站轮播管理
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="{:U('index/index')}" class="am-icon-home">首页</a></li>
+                <li><a href="{:U('gear/index')}">网站轮播</a></li>
+                <li class="am-active">轮播列表</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 列表
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                       <!--  <div class="portlet-input input-small input-inline">
+                           <div class="input-icon right">
+                               <i class="am-icon-search"></i>
+                               <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                       </div> -->
+                    </div>
+
+
+                </div>
+                <div class="tpl-block">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs">
+                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span><a href="{:U('gear/add')}" style="color:white;">新增</a></button>
+                                    <!-- <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 装饰</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 装饰</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                        </div>
+                    </div>
+                    <div class="am-g">
+                        <div class="tpl-table-images">
+                        	<volist name="data" id="mess">
+                            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                                <div class="tpl-table-images-content">
+                                    <div class="tpl-table-images-content-i-time">发布时间：{$mess['addtime']|date='Y-m-d',###}</div>
+                                    <div class="tpl-i-title">
+                                        <!-- 跳转链接:{$mess['jump_link']} -->
+                                    </div>
+                                    <a href="javascript:;" class="tpl-table-images-content-i">
+                                        <div class="tpl-table-images-content-i-info">
+                                        </div>
+                                        <span class="tpl-table-images-content-i-shadow"></span>
+                                        <img src="__PUBLIC__/{$mess['image']}" alt="">
+                                    </a>
+                                    <div class="tpl-table-images-content-block">
+                                        <div class="tpl-i-font">
+                                            排序值:{$mess['sort']}
+                                        </div>
+                                        <div class="tpl-i-more">
+                                            <ul>
+
+                                            </ul>
+                                        </div>
+                                        <div class="am-btn-toolbar">
+                                            <div class="am-btn-group am-btn-group-xs tpl-edit-content-btn">
+                                                <!-- <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 装饰</button> -->
+                                                <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-edit"></span><a href="{:U('gear/edit',array('id'=>$mess['id']))}" style="color:white;">编辑</a></button>
+                                                <!-- <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 装饰</button> -->
+                                                <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span><a href="{:U('gear/del',array('id'=>$mess['id']))}" style="color:white;">删除</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </volist>
+
+
+
+
+
+
+
+
+
+                            <div class="am-u-lg-12">
+                                <div class="am-cf">
+
+                                    <div class="am-fr" id="page">
+                                        {$show}
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+</block>

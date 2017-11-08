@@ -1,0 +1,57 @@
+<!--             <div class="a-left b-group-border2">
+  <div class="a-top u-mg-b-10">
+    <h4 class="a-head b-group-border3">
+      <div class="s-components-text s-text1 " style="text-align:inherit; ">
+        <span style="font-size:18px; font-family:microsoft yahei; color:rgb(16, 70, 128); line-height:2.0; padding-top:0px; font-weight:bold; display:block; padding-left:0px; " id="id_fa7f9c0b7db4df6659428728">证书查询</span></div>
+    </h4>
+    <div class="">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="u-cursor b-group-border1">
+          <a href="" class="b-group-text1">成绩查询</a></li>
+        <li role="presentation" class="u-cursor active b-group-border1">
+          <a href="" class="b-group-text1">学籍查询</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div> -->
+
+
+
+
+            <div class="a-left b-group-border2">
+              <div class="a-top u-mg-b-10">
+                <h4 class="a-head b-group-border3">
+                  <div class="s-components-text s-text1 " style="text-align:inherit; ">
+                    <span style="font-size:18px; font-family:microsoft yahei; color:rgb(16, 70, 128); line-height:2.0; padding-top:0px; font-weight:bold; display:block; padding-left:0px; " id="id_fa7f9c0b7db4df6659428728">证书查询</span></div>
+                </h4>
+                <div class="" >
+
+                  <ul class="nav nav-pills" role="tablist" >
+                  <div id="nav">
+                        <volist name="auth_cate" id="ae">
+                            <li role="presentation" class="u-cursor b-group-border1">
+                              <a href="__APP__/Home/{$ae['controller']}/{$ae['function']}" class="b-group-text1">{$ae['authcate_name']}</a>
+                            </li>
+                        </volist>
+                   </div>     
+                  </ul>
+
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+  <script type="text/javascript">
+var myNav = document.getElementById("nav").getElementsByTagName("a");   
+for(var i=0;i<myNav.length;i++)   
+{   
+   var links = myNav[i].getAttribute("href");   
+
+   var myURL = document.location.href;    
+   if(myURL.indexOf(links) != -1)   
+   {   
+      myNav[i].className="u-cursor active b-group-text1";   
+    }   
+} 
+</script>          

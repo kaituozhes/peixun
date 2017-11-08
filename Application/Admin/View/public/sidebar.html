@@ -1,0 +1,307 @@
+<if condition="$_SESSION['Administrator'][agency_id] eq 0 ">
+
+<div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                欢迎你：admin
+            </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="{:U('index/index')}" class="nav-link">
+                            <i class="am-icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>信息录入管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+
+                                <a href="{:U('member/agency')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>机构信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{:U('subject/lst')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>科目管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{:U('member/student')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+<!--                                 <a href="{:U('member/achievement')}">
+    <i class="am-icon-angle-right"></i>
+    <span>学生成绩录入</span>
+    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+</a>  -->
+                                <a href="{:U('member/lecturer')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>讲师信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{:U('member/certifi')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生证书管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+<!--
+                                <a href="{:U('group/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>权限管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a> -->
+
+
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>用户管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="{:U('user/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>管理员</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <!-- <a href="{:U('member/lecturer')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>讲师管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>  -->
+                                <a href="{:U('agencym/lst')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>培训机构管理员</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <a href="{:U('member/us')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生讲师账号管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <!-- <a href="{:U('member/useredit')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>会员资料状态</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>  -->
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>资料状态</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+
+                                <a href="{:U('member/useredit')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>讲师状态</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <a href="{:U('member/medit')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生状态</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>网站信息管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+
+                                <a href="{:U('gear/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>Banner管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <a href="{:U('article/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>文章管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                                                <a href="{:U('link/fujia')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>网站附加信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <!-- <a href="{:U('article/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>友情链接管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>  -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>栏目管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="{:U('category/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>基础栏目</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <!-- <a href="{:U('category/authcate')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>权限栏目</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a> -->
+
+
+                            </li>
+                        </ul>
+                    </li>
+                   <!--  <li class="tpl-left-nav-item">
+                       <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                           <i class="am-icon-table"></i>
+                           <span>扩展功能</span>
+                           <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                       </a>
+                       <ul class="tpl-left-nav-sub-menu">
+                           <li>
+                               <a href="{:U('plment/index')}">
+                                   <i class="am-icon-angle-right"></i>
+                                   <span>支付方式管理</span>
+                                   <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                               </a>
+                           </li>
+                       </ul>
+                   </li> -->
+
+                     <li class="tpl-left-nav-item">
+    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+        <i class="am-icon-table"></i>
+        <span>网站名称管理</span>
+        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+    </a>
+    <ul class="tpl-left-nav-sub-menu">
+        <li>
+            <a href="{:U('link/basic')}">
+                <i class="am-icon-angle-right"></i>
+                <span>网站名称管理</span>
+                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+            </a>
+
+        </li>
+        <!--
+    </ul>
+</li> -->
+                </ul>
+            </div>
+        </div>
+
+    <else />
+
+
+<div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                欢迎你：{$session}
+            </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="{:U('index/index')}" class="nav-link">
+                            <i class="am-icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>信息录入管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+
+
+
+                                <a href="{:U('subject/lst')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>科目管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{:U('member/student')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+<!--                                 <a href="{:U('member/achievement')}">
+    <i class="am-icon-angle-right"></i>
+    <span>学生成绩录入</span>
+    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+</a>  -->
+                                <a href="{:U('member/lecturer')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>讲师信息管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{:U('member/certifi')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>学生证书管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+<!--
+                                <a href="{:U('group/index')}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>权限管理</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a> -->
+
+
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+</if>

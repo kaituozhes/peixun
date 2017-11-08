@@ -1,0 +1,174 @@
+<extend name="two/base" />
+<block name="main"> 
+<link href="__PUBLIC__/web/neibu/Style/StudentStyle.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/web/neibu/Script/jBox/Skins/Blue/jbox.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/web/neibu/Style/ks.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/web/neibu/Script/jBox/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/web/neibu/Script/jBox/jquery.jBox-2.3.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/web/neibu/Script/jBox/i18n/jquery.jBox-zh-CN.js" type="text/javascript"></script>
+<script src="__PUBLIC__/web/neibu/Script/Common.js" type="text/javascript"></script>
+<script src="__PUBLIC__/web/neibu/Script/Data.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $().ready(function () {
+        setStudMsgHeadTabCheck();
+        showUnreadSysMsgCount();
+    });
+
+    //我的信息头部选项卡
+    function setStudMsgHeadTabCheck() {
+        var currentUrl = window.location.href;
+        currentUrl = currentUrl.toLowerCase();
+        var asmhm = "";
+        $("#ulStudMsgHeadTab li").each(function () {
+            asmhm = $(this).find('a').attr("href").toLowerCase();
+            if (currentUrl.indexOf(asmhm) > 0) {
+                $(this).find('a').attr("class", "tab1");
+                return;
+            }
+        });
+    }
+
+    //显示未读系统信息
+    function showUnreadSysMsgCount() {
+        var unreadSysMsgCount = "0";
+        if (Number(unreadSysMsgCount) > 0) {
+            $("#unreadSysMsgCount").html("(" + unreadSysMsgCount + ")");
+        }
+    }
+
+    //退出
+    function loginOut() {
+        if (confirm("确定退出吗？")) {
+            StudentLogin.loginOut(function (data) {
+                if (data == "true") {
+                    window.location = "/Login.aspx";
+                }
+                else {
+                    jBox.alert("退出失败！", "提示", new { buttons: { "确定": true} });
+                }
+            });
+        }
+    }
+    //更改报考类别
+    function changeCateory(thisObj, id) {
+        var oldCateoryId = $("#cateoryId").val();
+        var cateoryId = "";
+        if (id != null) {
+            cateoryId = id;
+        }else{
+            cateoryId = thisObj.val();
+        }
+        var studentId = $("#studentId").val();
+        if (cateoryId.length <= 0) {
+            jBox.tip("报考类别不能为空！");
+            if (id == null) {
+                thisObj.val(oldCateoryId);
+            }
+        }
+        else {
+            studentInfo.changeStudentCateory(cateoryId, function (data) {
+                var result = $.parseJSON(data);
+                if ((String(result.ok) == "true")) {
+                    window.location.href = "/Index.aspx";
+                }
+                else {
+                    jBox.tip(result.message);
+                }
+            });
+        }
+    }
+</script>
+
+<div class="page" style="width:90%;">
+	<div style="clear:both;"></div>
+    <div class="box mtop">
+        <include file="member/left"/>
+
+        <div class="rightbox">   
+            <h2 class="mbx"><a href="{:U('member/student_add')}">添加学生信息</a></h2>
+            <div class="morebt"></div>
+            <div class="cztable">
+                <form action="" method="post">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="15%" align="right"><div align="right">学生学号： </div></td>
+                        <td><input id="numeric" size="20" name="numeric" class="input_2"/></td>
+                    </tr>
+
+                    <tr>
+                        <td width="15%" align="right"><div align="right">姓名： </div></td>
+                        <td><input id="realname" size="20" name="realname" class="input_2"/></td>
+                    </tr>
+
+                    <tr>
+                        <td width="15%" align="right"><div align="right">性别： </div></td>
+                        <td>
+                            <input type="radio" id="Ctitle" size="20" name="sex" value="1" class="input_2" value=""/>男
+                            <input type="radio" id="Ctitle" size="20" name="sex" value="2" class="input_2" value=""/>女
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="15%" align="right"><div align="right">出生年月： </div></td>
+                        <td><input id="birth" size="20" name="birth" class="input_2"/></td>
+                    </tr>
+
+                    <tr>
+                        <td width="15%" align="right"><div align="right">所在机构：</div></td>
+                        <td>
+                            <select id="agency" name="agency">
+                                <option value="Unselected">请选择</option>
+                                <!-- <volist name="agency_data" id="agency"> -->
+                                    <option value="{$agency['agency_id']}">
+                                        {$agency['agencyrealname']}
+                                    </option>
+                                <!-- </volist> -->
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="15%" align="right"><div align="right">课程名： </div></td>
+                        <td id="ke">
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div align="center" >
+                                <input type="submit" value="提交" onclick="saveClick('7c50f70a-775b-4aef-8bf2-5010ec612c0d')" class="input2" />
+                                <input type="submit" value="返回" onclick="returnIndex()" class="input2" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="footer"> 
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+<script type="text/javascript" src="__PUBLIC__/web/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('select[name=agency]').change(function(msg){
+            var agid = $(this).val();
+            $.get("{:U('member/ajax_get_course')}",{agid:agid},function(msg){
+                var str = '';
+                if(msg){
+                    for(var i in msg){
+                        str += '<input type="radio" id="course" size="20" name="course" class="input_2 ke" value="'+msg[i]['course_id']+'"/>'+msg[i]['course_name'];
+                    }
+                    $('#ke').html(str);
+                }
+            })
+        })
+       
+    })
+</script>
+<script src="__PUBLIC__/web/neibu/Script/changeOption.js" type="text/javascript"></script>
+<script src="__PUBLIC__/web/neibu/Script/rl.js" type="text/javascript"></script>
+</block>

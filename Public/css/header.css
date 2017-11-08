@@ -1,0 +1,258 @@
+*{margin:0px;padding:0px;}
+ul,ol,dl,li{
+	list-style:outside none none;
+}
+a{
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+a:hover{color:#F69;text-decoration:none;}
+#header a{
+	border-right:1px dotted #ccc;
+	padding:0 15px;
+	display: inline-block;
+	height:20px;
+	line-height: 20px;
+}
+#header li{
+	text-align: center;
+	display: inline;
+}
+em{
+	font-style: normal;
+}
+#header .weixin{
+	background:url(../images/i_wx_single.png) no-repeat scroll 0% 0%;
+	padding:1px 11px;
+}
+.lei_a{margin-bottom: -1px}
+
+.lei_h3{margin-top: 10px}
+.inner{
+	text-align:right;
+	line-height:30px;
+	width: 1200px;
+	height:30px;
+}
+#header a em{
+	background:url(../images/mls_global140607.png) no-repeat;
+	padding:1px 12px;
+}
+#header .qq{
+	background-position:-186px -21px;
+}
+#header .cart{
+	background-position:-1px -163px;
+}
+#header .cart-num{
+	color:#fff;
+	background-color:#FF6497;
+	padding:0px 6px;
+}
+#header .order{
+	background-position:-218px -45px;
+}
+#header .imember{
+	background:url(../images/502ae4400ae27cfaef5f0c41ef4c_18_15.cf.png) no-repeat scroll 0% 0%;
+	padding:1px 11px;
+}
+#header .drop{
+	height: 45px;
+	position:relative;
+	z-index: 600;
+}
+#header .mob{
+	background-position:-164px -45px;
+}
+#header .arrow{
+	display: inline-block;
+	padding: 0px;
+	width: 10px;
+	height: 6px;
+	background-position: -20px -70px;
+}
+#header .down{
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index: 999;
+	background-color:#FFF;
+	padding:5px 10px;
+	border:1px solid #EEE;
+	line-height:20px;
+}
+#header .client{
+	font-size:14px;
+	color:#F69;
+}
+#header .last{
+	border-right:medium none;
+}
+.clear_f{
+	clear:both;
+	overflow: hidden;
+	height:0px;
+}
+#com-search{
+	min-width: 1260px;
+	background-color: #FFF;
+}
+.inner1{
+	width:1200px;
+	height:120px;
+	margin:0px auto;
+	position: relative;
+	z-index: 500px;
+}
+.logo{
+	float:left;
+	margin-top: 40px;
+}
+.sublogo{
+	float:left;
+	margin-top:40px;
+	margin-left:15px;
+}
+.search{
+	width: 520px;
+	position: absolute;
+	top:21px;
+	left:50%;
+	margin-left:-240px; 
+}
+.active{
+	display: inline-block;
+	text-align: center;
+	width: 56px;
+	line-height: 24px;
+	cursor: pointer;
+	background-color:#F69;
+	color:#FFF;
+}
+.span{
+	display: inline-block;
+	text-align: center;
+	width: 56px;
+	background:#ddd;
+	margin-left:0px;
+	line-height: 24px;
+	cursor: pointer; 
+}
+.search-txt{
+	float:left;
+	border:2px solid #F69;
+	width:440px;
+	line-height:28px;
+	height:32px;
+	padding:0px 0px 0px 8px;
+	margin:0px;
+}
+input{
+	resize: none;
+	outline: 0px none;
+	word-wrap: break-word;
+}
+.search-btn{
+	float:left;
+	width:80px;
+	height:32px;
+	background: #F69 url(../images/5e7c00ec264e857089caf7d7f742_24_20.ch.png) no-repeat scroll center center;
+	cursor: pointer;
+}
+.suggest-box{
+	border:1px solid #DDD;
+	width:447px;
+	background-color:#FFF;
+	position:absolute;
+	left:0px;
+	top:31px;
+	z-index: 999;
+	display: none;
+}
+.hotword{
+	padding-top:12px; 
+	float:left;
+	width:520px;
+	height:29px;
+	text-align: left;
+	
+
+}
+.ha{width: 50px;
+	color:#F69 ;
+	margin-left: 20px;
+	text-align: left;
+}
+.spread{
+	float:right;
+	margin-top:12px;
+}
+.fixed{
+	position:fixed;
+	z-index: 400px;
+	width:100%;
+	top:0px;
+}
+#def-nav{
+	min-width: 1260px;
+	height:48px;
+	line-height: 48px;
+	border-bottom: 2px solid #F69;
+	background-color:#FFF;
+}
+.inner2{
+	width:1200px;
+	margin:0px auto;
+}
+.active2{
+	border-color:#F69;
+	color:#F69;
+}
+.da{
+	float:left;
+	font-size: 14px;
+	font-weight: bolder;
+	padding: 0px 22px;
+}
+.nick{
+	padding-right: 0px;
+	border-right:none;
+}
+.face{
+	vertical-align:middle;
+	height:19px;
+	width:19px;
+	border:1px solid #DDD;
+	border-radius:9px;
+	padding-right:2px;
+}
+.member{
+	padding-left: 0px;
+}
+.level{
+	height:20px;
+	width:60px;
+	display:inline-block;
+	margin-right: 2px;
+	vertical-align:-5px;
+}
+.level-0{
+	background:url(../images/5e9439fc636d94ae034c04017700_60_20.ch.png) no-repeat;
+}
+.account{
+	width:70%;
+}
+.down1{
+	position:absolute;
+	top:23px;
+	right:5px;
+	z-index: 999;
+	background-color:#FFF;
+	padding:5px 10px;
+	border:1px solid #EEE;
+	line-height:20px;
+}
+.msg1{
+	width:120px;
+}

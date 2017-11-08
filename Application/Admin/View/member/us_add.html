@@ -1,0 +1,209 @@
+<extend name="public/base" />
+<block name="main">  
+<style type="text/css">
+    #fen{display: none;}
+    #fen2{display: none;}
+    #fen3{display: none;}
+</style>
+<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                会员成绩添加
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">会员成绩管理</a></li>
+                <li class="am-active">会员成绩添加</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 添加
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" enctype="multipart/form-data" method="post" action="{:U('member/common_insert')}">
+                                <input type="hidden" name="table" value="achievement">
+                                <input type="hidden" name="jump" value="achievement">
+                                <input type="hidden" name="auth" value="2">
+
+
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">学生学号 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="numeric" class="tpl-form-input" id="user-name" placeholder="学生学号" value="">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">身份证 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="ids" class="tpl-form-input" id="user-name" placeholder="身份证" value="">
+                                    </div>
+                                </div>
+    
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">姓名 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="realname" class="tpl-form-input" id="user-name" placeholder="姓名" value="">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">课程名 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="course" class="tpl-form-input" id="user-name" placeholder="课程名" value="">
+                                    </div>
+                                </div>
+                                <!-- 初级状态 -->
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label" style="color:red;">初级 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="stage" id="">
+                                            <option value="0">请选择</option>
+                                            <option value="1">课程学习</option>
+                                            <option value="2">考试准备</option>
+                                            <option value="3">考试完成</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="am-form-group" id="fen">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="fen" class="tpl-form-input" id="user-name" placeholder="分数" value="">
+                                    </div>
+                                </div>
+                                <!-- 中级 -->
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label"style="color:red;">中级 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="stage2" id="">
+                                            <option value="0">请选择</option>
+                                            <option value="1">课程学习</option>
+                                            <option value="2">考试准备</option>
+                                            <option value="3">考试完成</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="am-form-group" id="fen2">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="fen2" class="tpl-form-input" id="user-name" placeholder="分数" value="">
+                                    </div>
+                                </div>
+                                <!-- 高级 -->
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label"style="color:red;">高级 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="stage3" id="">
+                                            <option value="0">请选择</option>
+                                            <option value="1">课程学习</option>
+                                            <option value="2">考试准备</option>
+                                            <option value="3">考试完成</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="am-form-group" id="fen3">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="fen3" class="tpl-form-input" id="user-name" placeholder="分数" value="">
+                                    </div>
+                                </div>
+                                <!-- 级别选择jq处理数据 -->
+                                <script type="text/javascript">
+                                /*初级*/
+                                    $(function(){
+                                        $('select[name=stage]').change(function(){
+                                            var t = $(this).val();
+                                            if(t == 3){
+                                                $('#fen').show();
+                                            }else{
+                                                $('#fen').hide();
+                                            }
+                                        })
+                                    })
+                                /*中级*/    
+                                    $(function(){
+                                        $('select[name=stage2]').change(function(){
+                                            var t = $(this).val();
+                                            if(t == 3){
+                                                $('#fen2').show();
+                                            }else{
+                                                $('#fen2').hide();
+                                            }
+                                        })
+                                    })
+                                /*高级*/
+                                    $(function(){
+                                            $('select[name=stage3]').change(function(){
+                                                var t = $(this).val();
+                                                if(t == 3){
+                                                    $('#fen3').show();
+                                                }else{
+                                                    $('#fen3').hide();
+                                                }
+                                            })
+                                        })
+                                </script>
+
+
+                                <script type="text/javascript">
+                                    $(function(){
+                                        $('select[name=type]').change(function(){
+                                            var t = $(this).val();
+                                            if(t == 3){
+                                                $('#fen').show();
+                                            }else{
+                                                $('#fen').hide();
+                                            }
+                                        })
+                                    })
+                                </script>
+
+
+                                <!-- 成绩状态 -->
+
+
+                                <!-- <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">分数 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="fraction" class="tpl-form-input" id="user-name" placeholder="分数" value="">
+                                    </div>
+                                </div> -->
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">所在机构 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <select name="agency" id="">
+                                            <volist name="jigou" id="vo">
+                                            <option value="{$vo['agency_id']}">{$vo['agencyrealname']}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+</div>
+</block>

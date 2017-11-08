@@ -1,0 +1,19 @@
+<extend name="public/base"/>
+<block name="main">
+<div class="banner">
+    <img src="__PUBLIC__/{$hs_mess['cateimg']}" class="index_banner"/>
+</div>
+<div class="about">
+    <div class="container">
+        <div class="fl">    
+            <hr/>
+            <div class="body">
+                <?php echo html_entity_decode(html_entity_decode($one['body'])); ?>
+            </div>
+        </div>
+        <include file="public/sright"/>
+        <div class="clear"></div>
+    </div>
+</div>
+<include file="public/navfooter" />
+</block>

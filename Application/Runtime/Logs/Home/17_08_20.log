@@ -1,0 +1,47 @@
+[ 2017-08-20T19:12:45+08:00 ] 95.220.41.60 /index.php/Home/member/lecturer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.015625s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\MemberController.class.php on line 10 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+
+[ 2017-08-20T19:12:47+08:00 ] 95.220.41.60 /index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\peixun\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: DESCRIBE hao_category [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 1 AND `hidden` = 2 ORDER BY sort asc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_category` WHERE `pid` = 0 AND `position` = 2 AND `hidden` = 2  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 13 行.
+SQL: DESCRIBE hao_gear [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_gear` ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\CommonController::get_homeuser(), called in D:\project\peixun\Application\Home\Controller\CommonController.class.php on line 31 and defined D:\project\peixun\Application\Home\Controller\CommonController.class.php 第 70 行.
+SQL: DESCRIBE hao_auth_group [ RunTime:0.000000s ]
+SQL: SELECT * FROM `hao_auth_group`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

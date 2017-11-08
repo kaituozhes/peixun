@@ -1,0 +1,183 @@
+.route-header{
+    margin-top: 12px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+}
+.route-header .nav-title{
+    font-size: 38px;
+    float: left;
+    width: 150px;
+    padding-left: 20px;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    /*border-bottom: 5px solid #fec4d7;*/
+    font-weight: bold;
+}
+.route-header .nav-title a{
+    color: #ff6699;
+}
+.route-header .status-nav{
+    width: 1014px;
+    height: 48px;
+    border-bottom: 5px solid #c2c2c2;
+    line-height: 51px;
+    float: left;
+    margin-top: -40px;
+    margin-left: 14px;
+    font-weight: bold;
+}
+.route-header .status-nav ul {
+    font-size: 0;
+}
+.route-header .status-nav ul li.active3{
+    color:#F69;
+}
+.first{
+    border-bottom:5px solid #DDD;
+}
+.route-header .status-nav ul li {
+    display: inline-block;
+    height: 48px;
+    text-align: center;
+    width:127px;
+    position: relative;
+}
+table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.order_content {
+    margin-left: 14px;
+    float: left;
+}
+.order_list {
+    width: 1014px;
+}
+.order_content_box {
+    background: #fff;
+}
+.order_list tr {
+    border-bottom: 1px solid #eee;
+}
+user agent stylesheettr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.order_list thead th {
+    height: 44px;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.order_list .bleft {
+    border-left: 1px solid #eee;
+}
+.order_list .deal-status {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+.order_list th .now-status {
+    height: 100%;
+}
+.order_area .arrow{
+    height: 4px;
+    width: 8px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.blackdown{
+    background:url('../images/arrow.png') no-repeat scroll -12px center;
+}
+.order_list .bright{
+    border-right: 1px solid #EEE;
+}
+/**********************************************************************/
+.order_list .order_info td {
+    text-align: left;
+    height: 38px;
+}
+.order_list .bright {
+    border-right: 1px solid #EEE;
+}
+.order_list .order_info td span {
+    margin-left: 20px;
+}
+.order_list .order_info td .shop_short_info{
+    margin-left: 60px;
+}
+.order_list .order_info .getserviceqq {
+    color: #F69;
+    border: 1px solid #F69;
+    padding: 4px 13px;
+    margin-left: 6px;
+}
+.deal_time2{
+    float: right;
+    margin-right: 10px;
+}
+.order_list .order_goods_list .order_goods_goods {
+    text-align: left;
+    padding-left: 20px;
+}
+.order_list .order_goods_list td {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.order_list .order_goods_list .order_goods_goods .goods_detail {
+    position: relative;
+    display: block;
+}
+.order_list .order_goods_goods .goods_detail {
+    float: left;
+}
+.order_list .order_goods_list .order_goods_goods .pic {
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #EEE;
+}
+.order_list .order_goods_list .order_goods_goods .title {
+    margin-left: 85px;
+    line-height: 18px;
+    height: 54px;
+    overflow: hidden;
+}
+.order_list .order_goods_goods .title .goods_detail {
+    float: none;
+    display: block;
+}
+.order_list .order_goods_goods .snap-wrapper {
+    display: block;
+}
+.order_list .order_goods_list .order_goods_goods .prop {
+    margin-left: 85px;
+    color: #999;
+}
+.order_list .order_goods_list .br {
+    border-left: 1px solid #EEE;
+}
+.order_list .total_price_text {
+    color: #333;
+    font-size: 14px;
+}
+.order_list .order_goods_list .shipment {
+    color: #999;
+}

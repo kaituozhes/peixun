@@ -1,0 +1,62 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">美丽说商品管理中心</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">商品管理</div>
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>评论编号</th>
+									<th>用户编号</th>
+									<th>商品编号</th>
+									<th>评论内容</th>
+									<th>状态</th>
+									<th>评论时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<foreach name="data" item="vo">
+								<tbody>
+									<tr>
+										<td>{$vo['id']}</td>
+										<td>{$vo['uid']}</td>
+										<td>{$vo['pid']}</td>
+										<td>{$vo['comment']}</td>
+										<td>
+										<switch name="vo['state']">
+											<case value="1">差评</case>
+											<case value="2">中评</case>
+											<case value="3">好评</case>
+										</switch>
+										</td>
+										<td>{$vo['atime']|date="Y-m-d H:i",###}</td>
+										<td>
+											<a href="{:U('Judge/del',array('id'=>$vo['id']))}" class="btn btn-danger btn-xs">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</foreach>
+							<tr>
+								<td colspan="7" class="text-right">{$show}</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+</block>

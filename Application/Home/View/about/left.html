@@ -1,0 +1,33 @@
+<!-- 左侧边栏 -->
+<div class="channel-side fl">
+  <div class="ch-side-top">
+    <div class="zh">{$cate[0]['catename']}</div>
+    <div class="en"></div>
+  </div>
+  <div class="ch-side-nav">
+    <ul class="left_sind">
+      <foreach name="son_cate" item="son">
+        <li>
+          <div class="dt">
+            <a <if condition="$son['id'] eq 19" > href="{:U('about/index',array(id=>$cate_id))}" <elseif condition="$son['id'] eq 20" /> href="{:U('about/news',array('id'=>$son['id'],'cate_id'=>$cate_id))}" </if>>{$son['catename']}</a></div>
+        </li>
+      </foreach>
+    </ul>
+    <script>
+      $(function(){
+        var id = {$now_son['id']};
+        if(id == 19){
+            $('.left_sind').find('li:eq(0)').addClass('active').siblings('li').removeClass('active');
+        }else if(id == 20){
+            $('.left_sind').find('li:eq(1)').addClass('active').siblings('li').removeClass('active');
+        }
+        $('#top_nav').find('li').each(function(){
+            var nav_id = $(this).find('a').attr('data-id');
+            if(nav_id == 1){
+              $(this).find('a').addClass('on').parent().siblings('li').find('a').removeClass('on');
+            }
+        })
+      })
+    </script>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">美丽说后台评论管理中心</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-6" style="margin-left:250px">
+			<div class="panel panel-default">
+				<div class="panel-heading">商品评论管理</div>
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<form action="{:U('Judge/update')}" method="post" role="form">
+					<input type="hidden" name="id" value="{$data['id']}">
+						<div class="form-group has-success col-md-12">
+							<label class="control-label" for="inputSuccess">评论状态</label>
+							<select  name="state" class="form-control" id="inputSuccess" value="{$data['state']}">
+								<option value="1">显示该评论</option>
+								<option value="2">屏蔽该评论</option>
+							</select>
+							</div>
+						<button type="submit" class="btn btn-primary btn-lg  col-md-12">提交</button>
+					</form>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+</block>

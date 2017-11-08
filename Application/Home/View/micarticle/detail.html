@@ -1,0 +1,51 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="clear"></div>
+<div class="fyMain">
+  <div class="pronaa">
+  </div>
+  <!--栏目分类开始-->
+  <!--栏目分类结束--> 
+  
+  <!--图片内容开始-->
+  <div class="productfra">
+    <h2 class="center">{$duart['title']}</h2>
+    <div class="title_s">
+      <div class="divleft">浏览次数：<span id="hits">{$duart['click']}</span>&nbsp;&nbsp;&nbsp;&nbsp;时间：{$duart['pubdate']|date="Y-m-d",###}</div>
+      <div class="divright"> 
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <span class="bds_more" style="line-height:16px;">分享到：</span> <a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="shareCount"></a> </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools" ></script> 
+        <script type="text/javascript" id="bdshell_js"></script> 
+        <script type="text/javascript">
+            document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script> 
+        <!-- Baidu Button END --></div>
+    </div>
+    <div class="padding25">
+      <div class="newsview">
+        <p><?php echo html_entity_decode(html_entity_decode($duart['body'])); ?></p>
+      </div>
+      <div class="viewpage">
+      	<!--上一篇 下一篇 开始-->
+        <div class="main_r_nav">
+        	<if condition="$sortart['prev'] eq '没有了' ">
+				上一篇：{$sortart['prev']}
+				<a href="{:U('listarticle/detail',array('tid'=>$sortart['next']['tid']))}">下一篇：{$sortart['next']['name']}</a>
+			<elseif condition="$sortart['next'] eq '没有了' "/>
+				<a href="{:U('listarticle/detail',array('tid'=>$sortart['prev']['tid']))}">上一篇：{$sortart['prev']['name']}</a>
+				下一篇：{$sortart['next']}
+			<else/>
+				<a href="{:U('listarticle/detail',array('tid'=>$sortart['prev']['tid']))}">上一篇：{$sortart['prev']['name']}</a>
+				<a href="{:U('listarticle/detail',array('tid'=>$sortart['next']['tid']))}">下一篇：{$sortart['next']['name']}</a>
+			</if>
+        </div>
+        <!--上一篇 下一篇 结束-->
+        <div class="returnlist"> <a href="javascript:;" onclick="window.history.go(-1)" title="返回列表">返回上页</a> </div>
+      </div>
+    </div>
+  </div>
+  <!--图片内容结束--> 
+</div>
+<div class="footclear"></div>
+</block>

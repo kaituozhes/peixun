@@ -1,0 +1,247 @@
+.left_xinxi{
+	height:600px;
+	border:1px solid #ddd;
+	width:230px;
+	float:left;
+	margin-top:15px;
+	margin-left:20px;
+}
+.use_info{
+	width:230px;
+	height:128px;
+	float:left;
+	background:#f3f3f3;
+}
+.use_touxiang{
+	border:1px solid #e5e5e5;
+	border-radius:50%;
+	float:left;
+	height:79px;
+	margin-left:15px;
+	margin-right:10px;
+	margin-top:22px;
+	width:79px;
+}
+.use_name{
+	cursor:pointer;
+	overflow:hidden;
+	padding-top:35px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100px;
+}
+body{
+	color:#666;
+	font-family:Arial;
+	font-size:12px;
+}
+a{
+	text-decoration:none;
+}
+.use{
+	color:#f69;
+	font-size:14px;
+	text-decoration:none;
+
+}
+.use_id{
+	color:#999;
+	margin-top:20px;
+	padding:0;
+}
+.account_manage{
+	margin-left:23px;
+	margin-top:135px;
+	list-style:outside none none;
+	padding:0;
+	height:220px;
+	width:208px;
+}
+.account_manage strong{
+	background:rgba(0,0,0,0) url("../images/ac-m.png") no-repeat scroll 4px 3px;
+	color:#333;
+	display:block;
+	font-size:16px;
+	height:25px;
+	line-height:25px;
+	padding-left:25px;
+}
+.red_f{
+	color:#f69;
+}
+.account_manage a{
+	color:#666;
+	margin-top:25px;
+	margin-left:30px;
+	float:left;
+	width:180px;
+}
+.account_manage1{
+	margin-left:23px;
+	margin-top:25px;
+	list-style:outside none none;
+	padding:0;
+	height:220px;
+	width:208px;
+}
+.account_manage1 strong{
+	background:rgba(0,0,0,0) url("../images/ac-s.png") no-repeat scroll 4px 3px;
+	color:#333;
+	display:block;
+	font-size:16px;
+	height:25px;
+	line-height:25px;
+	padding-left:25px;
+}
+.red_f1{
+	color:#f69;
+}
+.account_manage1 a{
+	color:#666;
+	margin-top:25px;
+	margin-left:30px;
+	float:left;
+	width:180px;
+}
+.use_myxinxi{
+	width:950px;
+	height:970px;
+	float:left;
+	border:1px solid #ddd;
+	margin-top:15px;
+	margin-left:16px;
+	position:relative body;
+}
+.myuse_info{
+	width:950px;
+	height:50px;
+	background:#fafafa;
+	border-bottom:1px solid #ddd;
+	font-size:18px;
+	line-height:50px;
+	text-align:left;
+
+}
+.myuse_tianxie{
+	width:950px;
+	margin-top:20px;
+	height:500px;
+	/*border:1px solid red;*/
+}
+.myuse_name{
+	width:856px;
+	height:40px;
+	float:left;
+	margin-left:92px;
+	/*border:1px solid green;*/
+	margin-top:20px;
+}
+.myuse_name label{
+	line-height:40px;
+	height:40px;
+	text-align:right;
+	width:73px;
+	float:left;
+}
+.myuse_name input{
+	border:1px solid #ddd;
+	border-radius:4px;
+	height:36px;
+	padding-left:10px;
+	width:395px;
+	margin-left:10px;
+}
+.sexchange{
+	width:50px;
+}
+.passchange{
+	width:856px;
+	height:40px;
+	float:left;
+	margin-left:92px;
+	margin-top:20px;
+}
+.passchange label{
+	line-height:40px;
+	height:40px;
+	float:left;
+	width:73px;
+	text-align:right;
+}
+.passchange input{
+	margin-left:20px;
+}
+.my_address{
+	width:856px;
+	height:40px;
+	float:left;
+	margin-left:92px;
+	/*border:1px solid green;*/
+	margin-top:20px;
+}
+.my_address label{
+	line-height:40px;
+	height:40px;
+	float:left;
+	width:73px;
+	text-align:right;
+}
+.my_address select{
+	border:1px solid #ddd;
+	border-radius:4px;
+	color:#999;
+	height:36px;
+	margin-left:20px;
+	width:110px;
+}
+.xuanyan_list label{
+    line-height:40px;
+	height:40px;
+	float:left;
+	width:73px;
+	text-align:right;
+}
+.xuanyan_list textarea{
+	border:1px solid #ddd;
+	border-radius:4px;
+	color:#999;
+	height:100px;
+	line-height:20px;
+	overflow:auto;
+	padding-left:5px;
+	padding-right:5px;
+	width:400px;
+	margin-left:10px;
+	resize:none;
+	outline:0 none;
+	word-wrap:break-word;
+}
+.xuanyan_list{
+	width:856px;
+	height:40px;
+	float:left;
+	margin-left:92px;
+	/*border:1px solid green;*/
+	margin-top:20px;
+}
+textarea:focus{
+	border:1px solid #66c2ff;
+}
+input:focus{
+	border:1px solid #66c2ff;
+}
+.ext_submit{
+	background:#f69;
+	border:0 none;
+	color:#fff;
+	height:30px;
+	margin-left:184px;
+	margin-top:95px;
+	text-align:center;
+	width:100px;
+	cursor:pointer;
+}
+a:hover{
+	color:#f69;
+}
+

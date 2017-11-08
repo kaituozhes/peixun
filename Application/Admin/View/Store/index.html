@@ -1,0 +1,94 @@
+<extend name="public/base" />
+<block name="main">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">美丽说店铺管理中心</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">店铺管理</div>
+				<form action="" >
+				<input type="hidden" name="p" value="1">
+				<div style="width:400px;margin-left: 500px;margin-top: -37px "class="input-group custom-search-form">
+                    <input type="text" class="form-control" name="trade" value
+                    =""placeholder="请输入店铺名...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"> <i class="fa fa-search"style="height: 18px"></i>
+                        </button>
+                    </span>
+                </div>
+                </form>
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>店铺编号</th>
+									<th>创始人</th>
+									<th>店铺名称</th>
+									<th>logo</th>
+									<th>状态</th>
+									<th>信用级别</th>
+									<th>店铺地址</th>
+									<th>投诉意见</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<foreach name="data" item="vo">
+								<tbody>
+									<tr>
+										<td>{$vo['id']}</td>
+										<td>{$vo['name']}</td>
+										<td>{$vo['trade']}</td>
+										<td><img src="__PUBLIC__/{$vo['logo']}" width="30 height="30" "></td>
+										<td>
+											<switch name="vo['state']">
+												<case value="1">启用</case>
+												<case value="2">禁用</case>
+											</switch>
+										</td>
+										<td>
+										<!-- elt 小于等于 -->
+										<!-- glt 大于等于 -->
+										<!-- lt 小于 -->
+										<!-- gt 大于 -->
+										<if condition="($vo['creait'] gt 0) AND ($vo['creait'] elt 10)">一星
+										<elseif condition="($vo['creait'] gt 10) AND ($vo['creait'] elt 20)" />二星
+										<elseif condition="($vo['creait'] gt 20) AND ($vo['creait'] elt 30)" />三星
+										<elseif condition="($vo['creait'] gt 30) AND ($vo['creait'] elt 100)" />钻一
+										<elseif condition="($vo['creait'] gt 100) AND ($vo['creait']) elt 200" />钻二
+										<elseif condition="($vo['creait'] gt 200) AND ($vo['creait']) elt 300" />钻三
+										<elseif condition="($vo['creait'] gt 300) AND ($vo['creait']) elt 400" />皇冠一
+										<elseif condition="($vo['creait'] gt 400) AND ($vo['creait']) elt 500" />皇冠二
+										<elseif condition="($vo['creait'] gt 500) AND ($vo['creait']) elt 600" />皇冠三
+										</if>
+										</td>
+										<td>{$vo['area']}</td>
+										<td>{$vo['complain']}</td>
+										<td>
+											<a href="{:U('Store/edit',array('id'=>$vo['id']))}" class="btn btn-warning btn-xs">修改</a>
+											<a href="{:U('Store/del',array('id'=>$vo['id']))}" class="btn btn-danger btn-xs">删除</a>
+											<a href="{:U('Storegear/add',array('id'=>$vo['id']))}" class="btn btn-warning btn-xs">添加轮播</a>
+											<a href="{:U('Notice/add',array('id'=>$vo['id']))}" class="btn btn-warning btn-xs">添加公告</a>
+										</td>
+									</tr>
+								</tbody>
+							</foreach>
+							<tr>
+								<td colspan="10" class="text-right">{$show}</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+</block>

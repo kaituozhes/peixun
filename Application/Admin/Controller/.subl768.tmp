@@ -1,0 +1,62 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+use Org\LAMP\CatTree;
+class GoodsController extends CommonController {
+   public function index()
+   {
+   		$this->display();
+   }
+   public function add()
+   {
+   		if(!IS_POST){
+   			$this->display();
+   		}else{
+   			if(!empty($_FILES)){
+   				if($_FILES['topbanner']['error'] != 4){//错误为4表示没有文件上传
+   					$config = array(
+		                'rootPath' => 'Public/',
+		                'savePath' => 'Uploads/',
+		                'exts'     => array('gif','png','jpg')
+			        );
+			        $upload = new \Think\Upload($config);
+			        $info = $upload->uploadOne($_FILES['topbanner']);
+			        if($info){
+			        	$_POST['topbanner'] = $info['savepath'].$info['savename'];
+			        }else{
+			        	$this->error($upload->geterror());
+			        }
+   				}
+   			}
+   			$imgpath = I('post.imgpath');
+   			if(strstr(',',$imgpath)){
+
+   			}
+   			
+   		}
+   }
+   public function uploadfile()
+   {
+   		if(!empty($_FILES)){
+   			if($_FILES['file']['error'] != 4){
+   				$config = array(
+	                'rootPath' => 'Public/',
+	                'savePath' => 'Uploads/',
+	                'exts'     => array('gif','png','jpg')
+		        );
+		        $upload = new \Think\Upload($config);
+
+		        // 2.执行图片上传
+		        $info = $upload->uploadOne($_FILES['file']);
+		        if($info){
+		        	$path = $info['savepath'].$info['savename'];	
+		        	echo $path;
+		        }else{
+		        	echo 'nofile';
+		        }
+   			}
+   		}else{
+   			echo 'nofile';
+   		}
+   }
+}

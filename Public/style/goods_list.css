@@ -1,0 +1,86 @@
+*{padding:0;margin:0;}
+
+a{text-decoration:none;color:#666;font-family: Arial;}
+a:hover{color:#FF3E96;text-decoration:none;}
+ul{list-style:none;}
+li{color:#666;float:left;font-size:12px;width:45px;}
+
+#main{width:1200px;margin:0 auto;}
+#search{height:240px;}
+#classify{height:200px;}
+
+#list_img{background:yellow}
+
+.search_float{float:left;margin-top:130px}
+#meilishuo_logo_1{}
+#search_box{margin-left:50px}
+#inp{height:10px;width:400px;border:2px solid #FF3E96;padding:10px}
+#btn{height:34px;width:100px;border:2px solid #FF3E96;
+	background:#FF3E96;margin-left:-9px;color:snow
+}
+
+#search_word{list-style:none;margin-top:10px}
+#search_word li{width:45px;}
+#search_word li a{text-decoration:none;color:#666;}
+#search_word li a:hover{color:#FF3E96;}
+#meilishuo_logo_2{margin-left:150px;margin-top:100px}
+
+#navigation_list{clear:left;margin-left:20px}
+#navigation_list ul li{font-size: 14px;
+    				   font-weight: bolder;
+    				   color: #333;width:78px;
+    				}
+#img_run{height: 100px;margin-top:20px;}
+
+#classify{height:100px;border:1px solid #eee;margin:20px;padding:22px;
+	margin-left:auto; margin-right:auto;}
+#classify_1 ul{margin-left:100px}
+#classify_1 ul li{width:60px;margin-top:10px}
+
+.classify_1 ul{list-style:none;margin-top:-90px;margin-left:100px}
+.classify_1 ul li{width:60px;margin-top:10px}
+.clear{clear:left;}
+.classify_1{float: left;}
+#list_header{margin-top: 10px;padding-right: 10px;padding-left: 10px;
+			border: 1px solid #ddd}
+.list_header_style{width: 1180px;border-bottom: 1px solid #eee }
+.line{line-height: 40px;width:50px;float: left;font-size: 12px;color: #aaa;
+	  }
+.line_child ul{float: left;line-height: 40px;float:}
+.line_child ul li{width: 80px}
+
+#line_child_1{width:1120px;height:40px;margin-left:60px;overflow:hidden}
+#line_child_2{width:1120px;height:40px;margin-left:60px;overflow:hidden}
+#line_child_3{width:1120px;height:40px;margin-left:60px;overflow:hidden}
+#line_child_4{width:1120px;height:40px;margin-left:60px;overflow:hidden}
+
+#more{color: #666;font-size: 12px;margin-left: 1150px;
+	  margin-top:-27px;position: absolute; cursor: pointer;
+	 }
+
+.btn{border:1px solid #ddd;font-size: 12px;margin-left: 1150px;
+	margin-top:-27px;position: absolute;color: #666;background: snow;
+	cursor: pointer;
+   }
+.btn:hover{background:#ddd;}
+.inp{margin-top: 2px}
+.len{margin-left:500px; display: none}
+.btn_a{border:1px solid #ddd;font-size: 12px;color: #666;
+	   background: snow;cursor: pointer;
+	  }
+#img_header{width:1200px;height:40px;margin-top: 20px;border:1px solid #ddd;}
+#select{float: left;}
+#select ul li{width:70px;height:30px;padding-top:10px;}
+#select ul li:hover{background:#eee;}
+#select ul li a{margin:20px;}
+#price{width: 130px;float: left;}
+
+#inp_price{float: left;margin-top: 10px;margin-left: 40px}
+#inp_price input{width:80px;}
+#other{float: left;margin-left: 1030px;margin-top: -30px}
+#price_box{position: absolute; cursor: pointer;
+	display:none;width:80px;height:80px;margin-top:-11px;background: #ddd}
+
+.goods_image{width: 225px;height: 400px;float: left; margin:7px;}
+
+
